@@ -838,15 +838,6 @@
             border-color: var(--accent-gold-hover);
         }
 
-        .btn-action.danger {
-            color: var(--error);
-            border-color: rgba(239, 68, 68, 0.3);
-        }
-
-        .btn-action.danger:hover {
-            background-color: rgba(239, 68, 68, 0.1);
-        }
-
         /* 명부 검색바 및 테이블 */
         .search-wrapper {
             margin-bottom: 20px;
@@ -1479,12 +1470,6 @@
                     <button class="btn-action" onclick="printRoster()">
                         🖨️ 전국 서명부 인쇄 (Ctrl+P)
                     </button>
-                    <button class="btn-action" onclick="loadMockData()">
-                        🧪 전국 모의 데이터 생성
-                    </button>
-                    <button class="btn-action danger" onclick="resetRoster()">
-                        ⚠️ 전체 초기화
-                    </button>
                 </div>
             </div>
 
@@ -1513,7 +1498,7 @@
                     </tbody>
                 </table>
                 <div id="empty-message" class="empty-roster" style="display:none;">
-                    등록된 연대 서명인이 없습니다. 서명을 모으거나 모의 데이터를 로드해보세요!
+                    등록된 연대 서명인이 없습니다. 서명 운동에 참여하여 명부를 채워주세요!
                 </div>
             </div>
         </div>
@@ -1692,79 +1677,17 @@
             }
         }
 
-        // 2. 모의 데이터 소스 (전국구 시도/시군구/읍면동 모델 분기 처리 완료)
-        const dummyParticipants = [
-            {
-                id: 1,
-                name: "김영수",
-                gender: "남성",
-                birth: "19720412",
-                phone: "010-3454-9021",
-                sido: "서울특별시",
-                sigungu: "광진구",
-                dong: "구의동",
-                role: "소유주",
-                message: "시공사 사기 분양으로 위반건축물이 되어 10년째 고통스럽습니다. 전국적인 양성화 대책을 촉구합니다!"
-            },
-            {
-                id: 2,
-                name: "이혜정",
-                gender: "여성",
-                birth: "19830925",
-                phone: "010-8921-3323",
-                sido: "경기도",
-                sigungu: "수원시 영통구",
-                dong: "영통동",
-                role: "선의양수자",
-                message: "위반 등록되기 전 중개사 말만 믿고 샀는데 독박 벌금이라니요! 재산세는 매번 주택분 누진세율로 걷어가면서 어이없습니다."
-            },
-            {
-                id: 3,
-                name: "박준호",
-                gender: "남성",
-                birth: "19911105",
-                phone: "010-7744-1290",
-                sido: "부산광역시",
-                sigungu: "해운대구",
-                dong: "우동",
-                role: "임차인",
-                message: "세입자로서 주택도시보증보험 가입 거부당하고 보증금 미반환 위험에 노출되었습니다. 양성화로 살려주세요."
-            },
-            {
-                id: 4,
-                name: "최민지",
-                gender: "여성",
-                birth: "19790218",
-                phone: "010-4491-0988",
-                sido: "인천광역시",
-                sigungu: "남동구",
-                dong: "구월동",
-                role: "소유주",
-                message: "세입자가 실거주 중이라 물리적으로 철거가 불가능함에도, 기계적으로 이행강제금을 무제한 매기는 행정은 중단해야 합니다."
-            },
-            {
-                id: 5,
-                name: "정태우",
-                gender: "남성",
-                birth: "19650702",
-                phone: "010-2211-9034",
-                sido: "대전광역시",
-                sigungu: "서구",
-                dong: "둔산동",
-                role: "지지시민",
-                message: "전국 각지의 수많은 서민 주택 소유주들이 이 말도 안 되는 모순적 벌금에 고통받고 있습니다. 법률 개정을 지지합니다."
-            }
-        ];
+        // 2. 모의 데이터 소스 (전면 제거됨)
 
-        // 3. 로컬 스토리지 초기화 및 동기화
+        // 3. 로컬 스토리지 초기화 및 동기화 (기본 깨끗한 상태인 0명으로 시작)
         function initApp() {
-            const savedData = localStorage.getItem('solidarity_roster');
+            const savedData = localStorage.getItem('solidarity_roster_prod');
             if (savedData) {
                 roster = JSON.parse(savedData);
             } else {
-                // 첫 실행 시 전국/읍면동 단위 5개 디폴트 더미 탑재
-                roster = [...dummyParticipants];
-                localStorage.setItem('solidarity_roster', JSON.stringify(roster));
+                // 첫 실행 시 빈 배열로 시작 (데이터 없음)
+                roster = [];
+                localStorage.setItem('solidarity_roster_prod', JSON.stringify(roster));
             }
             updateViews();
         }
@@ -1985,7 +1908,7 @@
             };
 
             roster.push(newSignature);
-            localStorage.setItem('solidarity_roster', JSON.stringify(roster));
+            localStorage.setItem('solidarity_roster_prod', JSON.stringify(roster));
             
             // 성공 알림 및 리셋
             alert(`[연대서명 완료]\n${name} 님의 따뜻한 권리 찾기 동의가 성공적으로 접수되었습니다!`);
@@ -2073,29 +1996,14 @@
         function deleteRosterItem(id) {
             if (confirm("해당 서명인을 명부에서 안전하게 영구 삭제하시겠습니까?")) {
                 roster = roster.filter(p => p.id !== id);
-                localStorage.setItem('solidarity_roster', JSON.stringify(roster));
+                localStorage.setItem('solidarity_roster_prod', JSON.stringify(roster));
                 updateViews();
             }
         }
 
-        // 전체 초기화
-        function resetRoster() {
-            if (confirm("⚠️ 경고: 수집된 모든 서명 데이터가 영구적으로 날아갑니다. 지우시겠습니까?")) {
-                roster = [];
-                localStorage.removeItem('solidarity_roster');
-                updateViews();
-            }
-        }
 
-        // 모의 데이터 5개 즉시 로딩
-        function loadMockData() {
-            roster = [...dummyParticipants];
-            localStorage.setItem('solidarity_roster', JSON.stringify(roster));
-            updateViews();
-            alert("전국 읍면동 단위 객관식 데모를 위한 5명의 전국 서명인 정보가 복구되었습니다.");
-        }
 
-        // 7. 실시간 서명자 검색 기능
+        // 실시간 서명자 검색 기능
         function filterRoster(query) {
             const lowerQuery = query.toLowerCase();
             const filtered = roster.filter(p => 
