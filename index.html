@@ -1,0 +1,2151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>위반건축물 양성화를 위한 건축법·주차장법 개정 촉구 전국 시민 연대 서명</title>
+    
+    <!-- SEO 및 메타 데이터 -->
+    <meta name="description" content="준법건축 바른관리 시민연대 전국 본부에서 주관하는 위반건축물 양성화를 위한 서명운동 페이지입니다. 이행강제금 감경 확대 및 주차장 조례 완화를 전국구 차원에서 강력히 촉구합니다.">
+    <meta name="keywords" content="위반건축물, 양성화, 시민연대, 전국서명, 건축법 개정, 주차장법 조례, 이행강제금 감경, 신미경">
+    <meta name="author" content="준법건축 바른관리 시민연대 전국 연대">
+    
+    <!-- 구글 폰트 적용 (Outfit & Noto Sans KR) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <style>
+        /* --------------------------------------------------
+         * 🎨 프리미엄 바닐라 CSS 디자인 시스템 및 토큰
+         * -------------------------------------------------- */
+        :root {
+            --bg-primary: #0b0f19;
+            --bg-secondary: #131b2e;
+            --bg-card: #1e293b;
+            --bg-input: #0f172a;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --text-muted: #64748b;
+            --accent-gold: #f59e0b;
+            --accent-gold-hover: #d97706;
+            --accent-gold-glow: rgba(245, 158, 11, 0.25);
+            --border-color: #334155;
+            --border-color-focus: #475569;
+            --success: #10b981;
+            --error: #ef4444;
+            --shadow-premium: 0 10px 30px -10px rgba(0, 0, 0, 0.7);
+            --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* 기본 초기화 */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+
+        a {
+            color: var(--accent-gold);
+            text-decoration: none;
+            transition: var(--transition-smooth);
+        }
+
+        a:hover {
+            color: var(--accent-gold-hover);
+            text-decoration: underline;
+        }
+
+        /* --------------------------------------------------
+         * ✨ 레이아웃 및 컴포넌트 스타일링 (화면단)
+         * -------------------------------------------------- */
+        .app-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* 1. 헤더 영역 */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: linear-gradient(135deg, var(--bg-secondary) 0%, #172554 100%);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 30px 40px;
+            margin-bottom: 40px;
+            box-shadow: var(--shadow-premium);
+            position: relative;
+            overflow: hidden;
+            animation: fadeInDown 0.8s ease-out;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--accent-gold) 0%, #3b82f6 50%, var(--accent-gold) 100%);
+        }
+
+        .header-logo-group {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .header-logo {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--accent-gold);
+            box-shadow: 0 0 15px var(--accent-gold-glow);
+        }
+
+        .header-title-group h1 {
+            font-size: 1.8rem;
+            font-weight: 900;
+            letter-spacing: -0.5px;
+            background: linear-gradient(120deg, #ffffff 60%, var(--accent-gold) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 5px;
+        }
+
+        .header-title-group p {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .badge-branch {
+            background-color: var(--accent-gold);
+            color: var(--bg-primary);
+            font-weight: 700;
+            font-size: 0.75rem;
+            padding: 2px 8px;
+            border-radius: 5px;
+            text-transform: uppercase;
+        }
+
+        .btn-jump-to-form {
+            background-color: transparent;
+            border: 2px solid var(--accent-gold);
+            color: var(--accent-gold);
+            font-weight: 700;
+            padding: 12px 24px;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+            font-family: inherit;
+        }
+
+        .btn-jump-to-form:hover {
+            background-color: var(--accent-gold);
+            color: var(--bg-primary);
+            box-shadow: 0 0 20px var(--accent-gold-glow);
+            transform: translateY(-2px);
+        }
+
+        /* 2. 메인 컨텐츠 영역 (2 컬럼 구조) */
+        .main-content {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 40px;
+            align-items: start;
+            animation: fadeInUp 0.8s ease-out 0.2s both;
+        }
+
+        /* 좌측 컬럼: 매니페스토 (선언문) 및 대시보드 */
+        .left-column {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        /* 선언문 카드 */
+        .manifesto-card {
+            background-color: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: var(--shadow-premium);
+        }
+
+        .manifesto-card h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--accent-gold);
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .manifesto-lead {
+            font-size: 1.15rem;
+            font-weight: 500;
+            color: var(--text-primary);
+            margin-bottom: 30px;
+            padding-left: 15px;
+            border-left: 4px solid var(--accent-gold);
+        }
+
+        .manifesto-points {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .point-item {
+            background-color: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 20px 25px;
+            transition: var(--transition-smooth);
+        }
+
+        .point-item:hover {
+            transform: translateX(5px);
+            border-color: var(--border-color-focus);
+            background-color: rgba(255, 255, 255, 0.04);
+        }
+
+        .point-num {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--accent-gold) 0%, var(--accent-gold-hover) 100%);
+            color: var(--bg-primary);
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 28px;
+            font-weight: 800;
+            font-size: 0.9rem;
+            margin-bottom: 12px;
+        }
+
+        .point-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+
+        .point-desc {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            text-align: justify;
+        }
+
+        /* 시각적 다이어그램 */
+        .contradiction-diagram {
+            margin-top: 25px;
+            padding: 20px;
+            background: rgba(15, 23, 42, 0.5);
+            border-radius: 12px;
+            border: 1px dashed var(--border-color);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .diag-box {
+            text-align: center;
+            flex: 1;
+            padding: 12px;
+            background-color: var(--bg-secondary);
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        .diag-box.red {
+            border-color: rgba(239, 68, 68, 0.3);
+        }
+
+        .diag-box.green {
+            border-color: rgba(16, 185, 129, 0.3);
+        }
+
+        .diag-box h4 {
+            font-size: 0.85rem;
+            margin-bottom: 5px;
+            color: var(--text-primary);
+        }
+
+        .diag-box p {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+        }
+
+        .diag-vs {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 800;
+            color: var(--accent-gold);
+            font-size: 1.2rem;
+        }
+
+        /* 대시보드 카드 */
+        .dashboard-card {
+            background-color: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 35px;
+            box-shadow: var(--shadow-premium);
+        }
+
+        .dashboard-card h3 {
+            font-size: 1.3rem;
+            color: var(--text-primary);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .stats-summary {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+
+        .stat-box {
+            background: linear-gradient(145deg, #1e293b 0%, #0f172a 100%);
+            border: 1px solid var(--border-color);
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+
+        .stat-value {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: var(--accent-gold);
+            text-shadow: 0 0 10px var(--accent-gold-glow);
+        }
+
+        .stat-unit {
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-left: 2px;
+        }
+
+        /* SVG 통계 그래프 */
+        .chart-container {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 20px;
+            margin-top: 15px;
+            background: rgba(255, 255, 255, 0.01);
+            padding: 15px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.03);
+        }
+
+        .chart-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .chart-title {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .donut-chart {
+            transform: rotate(-90deg);
+        }
+
+        .donut-segment {
+            transition: stroke-dashoffset 0.6s ease;
+        }
+
+        .chart-legend {
+            margin-top: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: center;
+            font-size: 0.7rem;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .legend-color {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+        }
+
+        /* 바 차트 */
+        .bar-chart-list {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .bar-chart-row {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.75rem;
+        }
+
+        .bar-label {
+            width: 80px;
+            text-align: right;
+            color: var(--text-secondary);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .bar-container {
+            flex: 1;
+            height: 10px;
+            background-color: var(--bg-primary);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .bar-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #3b82f6 0%, var(--accent-gold) 100%);
+            width: 0%;
+            border-radius: 5px;
+            transition: width 0.8s ease-out;
+        }
+
+        .bar-val {
+            width: 30px;
+            text-align: left;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        /* 3. 우측 컬럼: 서명 양식 폼 */
+        .right-column {
+            position: sticky;
+            top: 40px;
+        }
+
+        .form-card {
+            background-color: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: var(--shadow-premium);
+            position: relative;
+        }
+
+        .form-card::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, transparent 50%, var(--accent-gold) 50%);
+            border-top-right-radius: 20px;
+            pointer-events: none;
+            opacity: 0.15;
+        }
+
+        .form-card h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 8px;
+        }
+
+        .form-subtitle {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-bottom: 30px;
+        }
+
+        /* 폼 요소 디자인 */
+        .form-group {
+            margin-bottom: 22px;
+            position: relative;
+        }
+
+        .form-label {
+            display: block;
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+
+        .form-label span.req {
+            color: var(--error);
+            margin-left: 3px;
+        }
+
+        /* 텍스트 입력창 */
+        .input-text, select {
+            width: 100%;
+            background-color: var(--bg-input);
+            border: 1px solid var(--border-color);
+            color: var(--text-primary);
+            border-radius: 10px;
+            padding: 12px 16px;
+            font-size: 0.95rem;
+            font-family: inherit;
+            transition: var(--transition-smooth);
+        }
+
+        .input-text:focus, select:focus {
+            outline: none;
+            border-color: var(--accent-gold);
+            box-shadow: 0 0 0 3px var(--accent-gold-glow);
+        }
+
+        .input-text::placeholder {
+            color: var(--text-muted);
+        }
+
+        /* 성별 라디오 버튼 */
+        .radio-group {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .radio-card {
+            background-color: var(--bg-input);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 12px;
+            text-align: center;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            font-weight: 500;
+        }
+
+        .radio-card input[type="radio"] {
+            display: none;
+        }
+
+        .radio-card:hover {
+            border-color: var(--border-color-focus);
+        }
+
+        .radio-card.active {
+            border-color: var(--accent-gold);
+            background-color: rgba(245, 158, 11, 0.05);
+            color: var(--accent-gold);
+        }
+
+        .radio-card .custom-radio-dot {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            border: 2px solid var(--text-muted);
+            display: inline-block;
+            position: relative;
+        }
+
+        .radio-card.active .custom-radio-dot {
+            border-color: var(--accent-gold);
+        }
+
+        .radio-card.active .custom-radio-dot::after {
+            content: '';
+            width: 6px;
+            height: 6px;
+            background-color: var(--accent-gold);
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        /* 셀렉트 및 텍스트 콤보 */
+        .address-group {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        /* 한마디 텍스트 아리아 */
+        .textarea-message {
+            width: 100%;
+            background-color: var(--bg-input);
+            border: 1px solid var(--border-color);
+            color: var(--text-primary);
+            border-radius: 10px;
+            padding: 12px 16px;
+            font-size: 0.95rem;
+            font-family: inherit;
+            resize: vertical;
+            min-height: 80px;
+            transition: var(--transition-smooth);
+        }
+
+        .textarea-message:focus {
+            outline: none;
+            border-color: var(--accent-gold);
+            box-shadow: 0 0 0 3px var(--accent-gold-glow);
+        }
+
+        /* 동의서 영역 */
+        .consent-box {
+            background-color: var(--bg-input);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 15px;
+            font-size: 0.78rem;
+            color: var(--text-secondary);
+            max-height: 120px;
+            overflow-y: auto;
+            margin-bottom: 12px;
+            text-align: justify;
+        }
+
+        .consent-checkbox-label {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .consent-checkbox-label input[type="checkbox"] {
+            margin-top: 3px;
+            width: 16px;
+            height: 16px;
+            accent-color: var(--accent-gold);
+        }
+
+        /* 오류 메세지 */
+        .error-message {
+            color: var(--error);
+            font-size: 0.78rem;
+            margin-top: 5px;
+            font-weight: 500;
+            display: none;
+        }
+
+        /* 제출 버튼 */
+        .btn-submit {
+            width: 100%;
+            background: linear-gradient(135deg, var(--accent-gold) 0%, var(--accent-gold-hover) 100%);
+            border: none;
+            color: var(--bg-primary);
+            font-size: 1.1rem;
+            font-weight: 800;
+            padding: 16px;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+            margin-top: 15px;
+            box-shadow: 0 4px 15px rgba(245, 158, 11, 0.2);
+            font-family: inherit;
+        }
+
+        .btn-submit:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(245, 158, 11, 0.4);
+            filter: brightness(1.1);
+        }
+
+        .btn-submit:active {
+            transform: translateY(0);
+        }
+
+        /* 4. 최근 한마디 슬라이더 */
+        .rolling-board-card {
+            background-color: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: var(--shadow-premium);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .rolling-board-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .msg-slider-container {
+            height: 160px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .msg-slider-track {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            position: absolute;
+            width: 100%;
+            animation: slideUp 20s linear infinite;
+        }
+
+        .msg-slider-track:hover {
+            animation-play-state: paused;
+        }
+
+        .msg-card {
+            background-color: var(--bg-card);
+            border: 1px solid rgba(255, 255, 255, 0.03);
+            border-radius: 12px;
+            padding: 12px 18px;
+            font-size: 0.85rem;
+        }
+
+        .msg-meta {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+            font-weight: 700;
+        }
+
+        .msg-author {
+            color: var(--accent-gold);
+        }
+
+        .msg-addr {
+            color: var(--text-muted);
+            font-size: 0.78rem;
+        }
+
+        .msg-content {
+            color: var(--text-primary);
+            font-style: italic;
+        }
+
+        /* 5. 하단 관리용 명부 및 어드민 패널 */
+        .admin-panel {
+            margin-top: 40px;
+            background-color: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: var(--shadow-premium);
+            animation: fadeInUp 0.8s ease-out 0.4s both;
+        }
+
+        .admin-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 20px;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .admin-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .admin-actions {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .btn-action {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            color: var(--text-primary);
+            font-weight: 700;
+            padding: 10px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+            font-size: 0.88rem;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-family: inherit;
+        }
+
+        .btn-action:hover {
+            border-color: var(--border-color-focus);
+            background-color: rgba(255, 255, 255, 0.05);
+            transform: translateY(-1px);
+        }
+
+        .btn-action.primary {
+            background-color: var(--accent-gold);
+            border-color: var(--accent-gold);
+            color: var(--bg-primary);
+        }
+
+        .btn-action.primary:hover {
+            background-color: var(--accent-gold-hover);
+            border-color: var(--accent-gold-hover);
+        }
+
+        .btn-action.danger {
+            color: var(--error);
+            border-color: rgba(239, 68, 68, 0.3);
+        }
+
+        .btn-action.danger:hover {
+            background-color: rgba(239, 68, 68, 0.1);
+        }
+
+        /* 명부 검색바 및 테이블 */
+        .search-wrapper {
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .search-input {
+            max-width: 300px;
+            font-size: 0.88rem;
+        }
+
+        .table-responsive {
+            width: 100%;
+            overflow-x: auto;
+            border-radius: 10px;
+            border: 1px solid var(--border-color);
+        }
+
+        table.roster-table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            font-size: 0.88rem;
+            background-color: var(--bg-input);
+        }
+
+        table.roster-table th, table.roster-table td {
+            padding: 14px 18px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        table.roster-table th {
+            background-color: var(--bg-secondary);
+            font-weight: 700;
+            color: var(--text-secondary);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        table.roster-table tbody tr {
+            transition: var(--transition-smooth);
+        }
+
+        table.roster-table tbody tr:hover {
+            background-color: rgba(255, 255, 255, 0.02);
+        }
+
+        table.roster-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        .role-badge {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 700;
+        }
+
+        .role-owner { background-color: rgba(239, 68, 68, 0.15); color: #f87171; }
+        .role-buyer { background-color: rgba(245, 158, 11, 0.15); color: #fbbf24; }
+        .role-tenant { background-color: rgba(59, 130, 246, 0.15); color: #60a5fa; }
+        .role-citizen { background-color: rgba(16, 185, 129, 0.15); color: #34d399; }
+
+        .btn-delete-row {
+            background: transparent;
+            border: none;
+            color: var(--text-muted);
+            cursor: pointer;
+            padding: 4px;
+            border-radius: 4px;
+            transition: var(--transition-smooth);
+        }
+
+        .btn-delete-row:hover {
+            color: var(--error);
+            background-color: rgba(239, 68, 68, 0.1);
+        }
+
+        .empty-roster {
+            text-align: center;
+            padding: 40px;
+            color: var(--text-secondary);
+            font-style: italic;
+        }
+
+        /* 푸터 영역 */
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border-color);
+            padding-top: 25px;
+        }
+
+        /* --------------------------------------------------
+         * 🔄 애니메이션 키프레임 정의
+         * -------------------------------------------------- */
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes slideUp {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-50%); }
+        }
+
+        /* --------------------------------------------------
+         * 🖨️ 인쇄 모드 스타일시트 (@media print)
+         * -------------------------------------------------- */
+        .print-only {
+            display: none;
+        }
+
+        @media print {
+            /* 1. 일반 웹 요소 전면 숨김 처리 */
+            body {
+                background-color: #ffffff !important;
+                color: #000000 !important;
+                font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif !important;
+                font-size: 11pt !important;
+                line-height: 1.5 !important;
+                padding: 0 !important;
+                margin: 0 !important;
+            }
+
+            .app-container, header, .main-content, .admin-panel, footer, .btn-jump-to-form {
+                display: none !important;
+            }
+
+            /* 2. 인쇄용 정식 문서 포맷 활성화 */
+            .print-only {
+                display: block !important;
+                padding: 10mm 15mm;
+                background-color: #ffffff;
+            }
+
+            .print-header {
+                text-align: center;
+                border-bottom: 2px double #000000;
+                padding-bottom: 15px;
+                margin-bottom: 30px;
+                position: relative;
+            }
+
+            .print-logo {
+                width: 50px;
+                height: 50px;
+                display: block;
+                margin: 0 auto 10px auto;
+                border: 1px solid #000000;
+                border-radius: 50%;
+            }
+
+            .print-header h1 {
+                font-size: 18pt;
+                font-weight: bold;
+                margin: 5px 0;
+                letter-spacing: -1px;
+            }
+
+            .print-header p {
+                font-size: 10pt;
+                color: #333333;
+            }
+
+            .print-meta-table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-bottom: 25px;
+            }
+
+            .print-meta-table td {
+                border: 1px solid #000000;
+                padding: 8px 12px;
+                font-size: 10pt;
+            }
+
+            .print-meta-label {
+                background-color: #f2f2f2;
+                font-weight: bold;
+                width: 20%;
+                text-align: center;
+            }
+
+            .print-section-title {
+                font-size: 12pt;
+                font-weight: bold;
+                border-left: 4px solid #000000;
+                padding-left: 8px;
+                margin: 20px 0 10px 0;
+            }
+
+            .print-manifesto-text {
+                font-size: 9.5pt;
+                text-align: justify;
+                background-color: #fcfcfc;
+                border: 1px solid #cccccc;
+                padding: 15px;
+                border-radius: 5px;
+                margin-bottom: 30px;
+            }
+
+            .print-manifesto-text ol {
+                padding-left: 20px;
+                margin-top: 10px;
+            }
+
+            .print-manifesto-text li {
+                margin-bottom: 8px;
+            }
+
+            .print-table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 15px;
+                page-break-inside: auto;
+            }
+
+            .print-table th, .print-table td {
+                border: 1px solid #000000;
+                padding: 8px 10px;
+                font-size: 9.5pt;
+                text-align: center;
+            }
+
+            .print-table th {
+                background-color: #f2f2f2;
+                font-weight: bold;
+            }
+
+            .print-table td.align-left {
+                text-align: left;
+            }
+
+            .print-footer {
+                margin-top: 40px;
+                text-align: center;
+                font-size: 11pt;
+            }
+
+            .print-sign-area {
+                margin: 40px 0;
+                text-align: center;
+                font-weight: bold;
+                font-size: 12pt;
+            }
+
+            .print-stamp {
+                display: inline-block;
+                width: 80px;
+                height: 80px;
+                border: 2px dashed red;
+                border-radius: 50%;
+                line-height: 80px;
+                text-align: center;
+                color: red;
+                font-size: 9pt;
+                margin-left: 20px;
+                vertical-align: middle;
+            }
+        }
+
+        /* --------------------------------------------------
+         * 📱 반응형 화면 대응 (모바일 해상도)
+         * -------------------------------------------------- */
+        @media (max-width: 1024px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+
+            .right-column {
+                position: static;
+            }
+
+            header {
+                flex-direction: column;
+                gap: 20px;
+                text-align: center;
+                padding: 25px 20px;
+            }
+
+            .header-logo-group {
+                flex-direction: column;
+            }
+
+            .btn-jump-to-form {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ==================================================
+         🏢 1. 오프라인/출력 전용 정식 공문 및 전국 서명부 양식 (평소 숨김)
+         ================================================== -->
+    <div class="print-only">
+        <div class="print-header">
+            <img class="print-logo" src="citizen_solidarity_logo.png" alt="시민연대 로고">
+            <h1>건축법·주차장법 개정 및 위반건축물 양성화 촉구 전국 시민 연대 서명부</h1>
+            <p>준법건축 바른관리 시민연대 전국 연대</p>
+        </div>
+
+        <table class="print-meta-table">
+            <tr>
+                <td class="print-meta-label">제출 대상</td>
+                <td>국회 국토교통위원회, 국토교통부 장관, 전국 광역 및 기초 지방자치단체장 및 의회 귀하</td>
+                <td class="print-meta-label">청원 구분</td>
+                <td>상위 건축법·주차장법 개정 및 지자체 조례 일괄 완화 촉구</td>
+            </tr>
+            <tr>
+                <td class="print-meta-label">대표 청원인</td>
+                <td>준법건축 바른관리 시민연대 광진구 지부 부지부장 신미경 외 공동 대변인단</td>
+                <td class="print-meta-label">서명 마감</td>
+                <td>국회 청원 및 국회 상임위원회 법안 심의 기한 내 수시 제출</td>
+            </tr>
+        </table>
+
+        <div class="print-section-title">청원 취지 및 선언문</div>
+        <div class="print-manifesto-text">
+            본 서명에 동의하는 대한민국 전국 각 지역의 서민 주택 소유주 및 세입자들은 동일한 행정청에 의해 자행되는 이중잣대식 모순 규제와 무제한적 평생 이행강제금 부과에 고통받고 있습니다. 이에 아래 3대 핵심 모순 해결 및 완화 법령·조례 개정을 엄중히 청원합니다.
+            <ol>
+                <li><strong>실질과세와 건축행정의 모순 해결:</strong> 동일한 지자체가 세수 확보 목적을 위해서는 사실상 주거용임을 인정하여 '주택분 재산세'를 정당하게 수집하면서도, 건축 규제 단속 시에는 불법 용도변경이라며 이행강제금을 부과하는 모순을 중단하고 감경 조항을 신설해야 합니다.</li>
+                <li><strong>민법·주택임대차보호법과 건축법 간의 충돌 해결:</strong> 세입자가 거주 중인 주택을 집주인이 무단 진입하여 벽이나 시설을 철거하는 행위는 형법상 주거침입 및 재물손괴죄에 해당하여 시정이 법리상 불가능함에도, 획일적으로 이행 불이행 벌금을 가중하는 폭력 행정을 즉각 개선해야 합니다.</li>
+                <li><strong>특정건축물 정리에 관한 특별조치법 실효성 확보를 위한 조례 전폭 완화:</strong> 국회를 통과한 양성화 특별법의 혜택이 전국의 영세 소유주들에게 온전히 실현되도록, 단독주택 양성화 대상 범위를 연면적 330㎡ 이하로 전격 확대하고, 지자체별 부설주차장 분담금 면제 및 이행강제금 조례 감경 비율을 법정 최고 한도인 75%로 전국 일괄 입법화해야 합니다.</li>
+            </ol>
+        </div>
+
+        <div class="print-section-title">시민 연대 서명 명부 원본</div>
+        <table class="print-table">
+            <thead>
+                <tr>
+                    <th style="width: 8%;">번호</th>
+                    <th style="width: 15%;">성명</th>
+                    <th style="width: 15%;">생년월일</th>
+                    <th style="width: 47%;">거주 주소 (읍·면·동 단위 기재)</th>
+                    <th style="width: 15%;">소유구분</th>
+                </tr>
+            </thead>
+            <tbody id="print-roster-rows">
+                <!-- 자바스크립트로 출력 데이터 주입 -->
+            </tbody>
+        </table>
+
+        <div class="print-sign-area">
+            위 선언문에 깊이 동의하며, 위반건축물 양성화를 위한 민생 구제 청원인으로 연대 서명합니다.<br><br>
+            2026년 &nbsp;&nbsp;&nbsp; 월 &nbsp;&nbsp;&nbsp; 일
+        </div>
+
+        <div class="print-footer">
+            <strong>준법건축 바른관리 시민연대 대표 청원인 신 미 경 (인)</strong>
+            <span class="print-stamp">시민연대<br>직인생략</span>
+        </div>
+    </div>
+
+    <!-- ==================================================
+         💻 2. 대화형 웹 인터페이스 영역
+         ================================================== -->
+    <div class="app-container">
+        
+        <!-- 탑 헤더 -->
+        <header>
+            <div class="header-logo-group">
+                <img class="header-logo" src="citizen_solidarity_logo.png" alt="준법건축 바른관리 시민연대 로고">
+                <div class="header-title-group">
+                    <h1>준법건축 바른관리 시민연대</h1>
+                    <p><span class="badge-branch">전국 연대 본부</span> 위반건축물 양성화를 위한 건축법·주차장법 개정 촉구 전국 서명 운동</p>
+                </div>
+            </div>
+            <button class="btn-jump-to-form" onclick="document.getElementById('solidarity-form').scrollIntoView({behavior: 'smooth'});">
+                서명 참여하기
+            </button>
+        </header>
+
+        <!-- 메인 콘텐츠 (2컬럼) -->
+        <div class="main-content">
+            
+            <!-- 좌측 컬럼 (선언문 및 대시보드) -->
+            <div class="left-column">
+                
+                <!-- 선언문 카드 -->
+                <div class="manifesto-card">
+                    <h2>⚖️ 서민 위반건축주의 눈물과 법리적 모순</h2>
+                    <div class="manifesto-lead">
+                        "집주인은 파산하고 세입자는 보증금을 잃는 가혹한 규제 행정, 반드시 개정되어야 합니다."
+                    </div>
+                    
+                    <div class="manifesto-points">
+                        <div class="point-item">
+                            <span class="point-num">1</span>
+                            <div class="point-title">세금은 합법 주택, 규제는 불법 상가? (실질과세 모순)</div>
+                            <div class="point-desc">
+                                지방세기본법 제17조에 따라 구청은 공부상 상가(근생)일지라도 실제 주택으로 쓰면 <strong>'주택분 재산세'</strong>를 합법적으로 징수해 갑니다. 세금을 다 걷어 실질적 주택 권리를 인정해 놓고, 건축법으로는 벌금을 부과하는 모순적 징세 행정을 규탄합니다.
+                            </div>
+                            <!-- 간단한 모순 다이어그램 -->
+                            <div class="contradiction-diagram">
+                                <div class="diag-box green">
+                                    <h4>지방세법 (재산세)</h4>
+                                    <p>"주택으로 과세"</p>
+                                </div>
+                                <div class="diag-vs">VS</div>
+                                <div class="diag-box red">
+                                    <h4>건축법 (이행강제금)</h4>
+                                    <p>"상가 무단 용도변경"</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="point-item">
+                            <span class="point-num">2</span>
+                            <div class="point-title">철거하면 형사범, 안 하면 평생 벌금? (이행불능)</div>
+                            <div class="point-desc">
+                                주택임대차보호법에 따라 임차인의 점유권과 주거권은 엄격하게 보호됩니다. 집주인이 시정명령을 따르기 위해 임차인 동의 없이 무단 진입하여 세벽을 철거하면 <strong>'주거침입 및 재물손괴죄'</strong>로 형사처벌을 받습니다. 법적으로 시정이 불가능한 상태에서 이행강제금을 무제한 부과하는 행위는 위법적입니다.
+                            </div>
+                        </div>
+
+                        <div class="point-item">
+                            <span class="point-num">3</span>
+                            <div class="point-title">전국 지자체 건축·주차장 완화 조례 일제 개정 촉구</div>
+                            <div class="point-desc">
+                                국회를 통과한 특정건축물 양성화 특별법은 구체적인 완화 범위와 분담금을 **지자체 조례**로 위임했습니다. 전국 각 지자체장 및 의회는 단독주택 범위를 법령 최고한도(330㎡ 이하)로 확대하고 이행강제금 감경 비율을 75%로 선포해야 마땅합니다.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 실시간 현황 통계 대시보드 (전국구/읍면동 반영) -->
+                <div class="dashboard-card">
+                    <h3>📊 전국 실시간 연대 서명 현황 대시보드</h3>
+                    
+                    <div class="stats-summary">
+                        <div class="stat-box">
+                            <div class="stat-label">총 참여 연대 서명인</div>
+                            <div class="stat-value" id="count-total">0<span class="stat-unit">명</span></div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-label">참여 광역 지자체</div>
+                            <div class="stat-value" id="count-regions">0<span class="stat-unit">개 시·도</span></div>
+                        </div>
+                    </div>
+
+                    <!-- 차트 그래픽 구성 -->
+                    <div class="chart-container">
+                        <div class="chart-wrapper">
+                            <div class="chart-title">참여자 구성 비율</div>
+                            <svg width="100" height="100" class="donut-chart">
+                                <circle cx="50" cy="50" r="40" fill="transparent" stroke="#334155" stroke-width="12"></circle>
+                                <circle id="donut-segment-owner" cx="50" cy="50" r="40" fill="transparent" stroke="#ef4444" stroke-width="12" stroke-dasharray="251.2" stroke-dashoffset="251.2" class="donut-segment"></circle>
+                                <circle id="donut-segment-buyer" cx="50" cy="50" r="40" fill="transparent" stroke="#f59e0b" stroke-width="12" stroke-dasharray="251.2" stroke-dashoffset="251.2" class="donut-segment"></circle>
+                                <circle id="donut-segment-tenant" cx="50" cy="50" r="40" fill="transparent" stroke="#3b82f6" stroke-width="12" stroke-dasharray="251.2" stroke-dashoffset="251.2" class="donut-segment"></circle>
+                            </svg>
+                            <div class="chart-legend">
+                                <div class="legend-item"><span class="legend-color" style="background-color:#ef4444"></span>집주인</div>
+                                <div class="legend-item"><span class="legend-color" style="background-color:#f59e0b"></span>선의양수</div>
+                                <div class="legend-item"><span class="legend-color" style="background-color:#3b82f6"></span>세입자</div>
+                            </div>
+                        </div>
+                        <div class="bar-chart-list">
+                            <div class="chart-title" style="text-align:left; margin-bottom:5px;">가장 참여가 뜨거운 읍·면·동 (Top 6)</div>
+                            <div id="bar-rows">
+                                <!-- 자바스크립트 전국구 읍면동 동적 주입 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 최근 시민 목소리 롤링 보드 -->
+                <div class="rolling-board-card">
+                    <h3>💬 억울한 전국 시민 피해 사례 및 연대 메시지</h3>
+                    <div class="msg-slider-container">
+                        <div class="msg-slider-track" id="msg-rolling-track">
+                            <!-- 로컬스토리지 기반 최근 한마디 리스트 주입 -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- 우측 컬럼 (객관식 주소 폼) -->
+            <div class="right-column" id="solidarity-form">
+                <div class="form-card">
+                    <h2>✍️ 연대 서명 참여서</h2>
+                    <div class="form-subtitle">개인정보는 서명 제출 외 어떠한 목적에도 도용되지 않습니다.</div>
+                    
+                    <form id="roster-form" onsubmit="handleFormSubmit(event)">
+                        
+                        <!-- 1. 성명 -->
+                        <div class="form-group">
+                            <label class="form-label" for="user-name">신청자 성명 (정자 기입)<span class="req">*</span></label>
+                            <input class="input-text" type="text" id="user-name" name="userName" placeholder="홍길동" required>
+                            <div class="error-message" id="err-name">이름을 입력해주세요.</div>
+                        </div>
+
+                        <!-- 2. 성별 -->
+                        <div class="form-group">
+                            <label class="form-label">성별<span class="req">*</span></label>
+                            <div class="radio-group">
+                                <label class="radio-card" id="gender-m-card">
+                                    <input type="radio" name="gender" value="남성" onclick="selectGender('M')" required>
+                                    <span class="custom-radio-dot"></span> 남성
+                                </label>
+                                <label class="radio-card" id="gender-f-card">
+                                    <input type="radio" name="gender" value="여성" onclick="selectGender('F')">
+                                    <span class="custom-radio-dot"></span> 여성
+                                </label>
+                            </div>
+                            <div class="error-message" id="err-gender">성별을 선택해주세요.</div>
+                        </div>
+
+                        <!-- 3. 생년월일 -->
+                        <div class="form-group">
+                            <label class="form-label" for="user-birth">생년월일 (8자리)<span class="req">*</span></label>
+                            <input class="input-text" type="text" id="user-birth" name="userBirth" maxlength="8" placeholder="예: 19800512" required>
+                            <div class="error-message" id="err-birth">생년월일 8자리를 입력해주세요.</div>
+                        </div>
+
+                        <!-- 4. 연락처 -->
+                        <div class="form-group">
+                            <label class="form-label" for="user-phone">연락처 (휴대전화 번호)<span class="req">*</span></label>
+                            <input class="input-text" type="tel" id="user-phone" name="userPhone" placeholder="010-0000-0000" maxlength="13" required>
+                            <div class="error-message" id="err-phone">유효한 연락처를 입력해주세요.</div>
+                        </div>
+
+                        <!-- 5. 전국 거주 주소 입력 (시도, 시군구, 읍면동 3단 선택형 객관식 Dropdown) -->
+                        <div class="form-group">
+                            <label class="form-label">거주 주소 (전체 객관식 선택)<span class="req">*</span></label>
+                            
+                            <div class="address-group">
+                                <!-- 1단계: 시·도 선택 -->
+                                <select id="user-address-sido" name="addressSido" onchange="onSidoChange(this.value)" required>
+                                    <option value="">-- 광역 시·도 선택 --</option>
+                                    <option value="11">서울특별시</option>
+                                    <option value="41">경기도</option>
+                                    <option value="28">인천광역시</option>
+                                    <option value="26">부산광역시</option>
+                                    <option value="27">대구광역시</option>
+                                    <option value="30">대전광역시</option>
+                                    <option value="29">광주광역시</option>
+                                    <option value="31">울산광역시</option>
+                                    <option value="36">세종특별자치시</option>
+                                    <option value="51">강원특별자치도</option>
+                                    <option value="43">충청북도</option>
+                                    <option value="44">충청남도</option>
+                                    <option value="45">전라북도</option> <!-- API 원칭 매핑 대응 -->
+                                    <option value="46">전라남도</option>
+                                    <option value="47">경상북도</option>
+                                    <option value="48">경상남도</option>
+                                    <option value="50">제주특별자치도</option>
+                                </select>
+                                
+                                <!-- 2단계: 시·군·구 선택 -->
+                                <select id="user-address-sigungu" name="addressSigungu" onchange="onSigunguChange()" required>
+                                    <option value="">-- 시·군·구 선택 --</option>
+                                </select>
+                                
+                                <!-- 3단계: 읍·면·동 선택 -->
+                                <select id="user-address-dong" name="addressDong" required>
+                                    <option value="">-- 읍·면·동 선택 --</option>
+                                </select>
+                            </div>
+                            <div class="error-message" id="err-address">거주 주소인 시·도, 시·군·구, 읍·면·동을 순서대로 모두 골라주세요.</div>
+                        </div>
+
+                        <!-- 6. 당사자 구분 -->
+                        <div class="form-group">
+                            <label class="form-label" for="user-role">서명자 소유/거주 구분<span class="req">*</span></label>
+                            <select id="user-role" name="userRole" required>
+                                <option value="">-- 해당하는 구분을 골라주세요 --</option>
+                                <option value="소유주">위반건축물 원소유주 (위반 등재 소유자)</option>
+                                <option value="선의양수자">선의의 양수 매수인 (모르고 매수한 소유자)</option>
+                                <option value="임차인">임차인/세입자 (전입 완료 거주 가구)</option>
+                                <option value="지지시민">일반 서민 구제 지지 시민</option>
+                            </select>
+                            <div class="error-message" id="err-role">본인의 소유/거주 구분을 입력해주세요.</div>
+                        </div>
+
+                        <!-- 7. 연대의 한마디 -->
+                        <div class="form-group">
+                            <label class="form-label" for="user-msg">피해 호소 및 연대의 한마디 (의원 제출용)</label>
+                            <textarea class="textarea-message" id="user-msg" name="userMsg" placeholder="예: 평생 모은 돈으로 산 집인데 위반건축물 낙인이 찍혀 피가 마릅니다. 살려주세요. / 세입자가 안나가고 있는데 복구하라는 건 모순 행정입니다."></textarea>
+                        </div>
+
+                        <!-- 8. 동의서 & 체크박스 -->
+                        <div class="form-group">
+                            <label class="form-label">개인정보 수집 및 서명대리 권한위임 동의<span class="req">*</span></label>
+                            <div class="consent-box">
+                                1. [수집·이용 목적]: 본 서명 명부는 '준법건축 바른관리 시민연대'에서 주관하는 위반건축물 구제 및 양성화를 위한 건축법·주차장법 청원 제출의 증빙용 문서로만 사용되며, 전국 각 자치단체 및 국회, 지방의회 제출 목적 이외에는 절대 사용되지 않습니다.<br>
+                                2. [수집 항목]: 성명, 성별, 생년월일, 연락처, 거주시도, 시군구, 읍면동 주소, 당사자 분류, 피해 호소 메시지.<br>
+                                3. [보유 및 파기]: 제출 완료 및 서명 운동 캠페인 종료일로부터 90일 내에 안전하게 일괄 영구 파기(소각 및 디지털 영구 삭제)됩니다.<br>
+                                4. [동의 거부 권리]: 본 동의를 거부하실 수 있으나, 거부 시 연대 서명부 등재 참여가 제한됩니다.
+                            </div>
+                            <label class="consent-checkbox-label">
+                                <input type="checkbox" id="user-consent" required>
+                                <span>상기 개인정보 수집 및 위임 목적에 동의합니다.</span>
+                            </label>
+                            <div class="error-message" id="err-consent">서명을 완료하려면 개인정보 이용 동의가 필요합니다.</div>
+                        </div>
+
+                        <!-- 서명 완료 버튼 -->
+                        <button type="submit" class="btn-submit">연대 서명 동의 완료하기</button>
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ==================================================
+             📊 3. 하단 서명부 데이터베이스 관리자 영역 (Admin Panel)
+             ================================================== -->
+        <div class="admin-panel">
+            <div class="admin-header">
+                <div class="admin-title">
+                    🔑 서명인 데이터 관리국 (전국 본부 통합자료)
+                </div>
+                <div class="admin-actions">
+                    <button class="btn-action primary" onclick="exportToCSV()">
+                        📥 전국 엑셀(CSV) 다운로드
+                    </button>
+                    <button class="btn-action" onclick="printRoster()">
+                        🖨️ 전국 서명부 인쇄 (Ctrl+P)
+                    </button>
+                    <button class="btn-action" onclick="loadMockData()">
+                        🧪 전국 모의 데이터 생성
+                    </button>
+                    <button class="btn-action danger" onclick="resetRoster()">
+                        ⚠️ 전체 초기화
+                    </button>
+                </div>
+            </div>
+
+            <!-- 검색바 -->
+            <div class="search-wrapper">
+                <input class="input-text search-input" type="text" id="roster-search" placeholder="성명, 시도, 읍면동, 구분 검색..." oninput="filterRoster(this.value)">
+            </div>
+
+            <!-- 서명 테이블 리스트 -->
+            <div class="table-responsive">
+                <table class="roster-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 6%;">번호</th>
+                            <th style="width: 14%;">성명</th>
+                            <th style="width: 8%;">성별</th>
+                            <th style="width: 14%;">생년월일</th>
+                            <th style="width: 14%;">연락처</th>
+                            <th style="width: 20%;">거주 주소(시도 시군구 읍면동)</th>
+                            <th style="width: 14%;">당사자 구분</th>
+                            <th style="width: 10%;">관리</th>
+                        </tr>
+                    </thead>
+                    <tbody id="roster-table-body">
+                        <!-- 데이터 주입 -->
+                    </tbody>
+                </table>
+                <div id="empty-message" class="empty-roster" style="display:none;">
+                    등록된 연대 서명인이 없습니다. 서명을 모으거나 모의 데이터를 로드해보세요!
+                </div>
+            </div>
+        </div>
+
+        <!-- 푸터 -->
+        <footer>
+            <p>© 2026 준법건축 바른관리 시민연대 전국 연대 본부. All Rights Reserved.</p>
+            <p style="margin-top: 5px; font-size: 0.75rem;">본 시스템은 전국 단위 이행강제금 부과 완화 조례 개정을 위한 비영리 서명 수집 탄원 시스템입니다. (대표청원인: 신미경)</p>
+        </footer>
+
+    </div>
+
+    <!-- ==================================================
+         ⚙️ 4. 서명 시스템 컨트롤러 스크립트 (법정동 API 계층 연동)
+         ================================================== -->
+    <script>
+        // 1. 상태 데이터 및 시도 정식 이름 사전 정의
+        let roster = [];
+
+        const sidoNames = {
+            "11": "서울특별시",
+            "41": "경기도",
+            "28": "인천광역시",
+            "26": "부산광역시",
+            "27": "대구광역시",
+            "30": "대전광역시",
+            "29": "광주광역시",
+            "31": "울산광역시",
+            "36": "세종특별자치시",
+            "51": "강원특별자치도",
+            "43": "충청북도",
+            "44": "충청남도",
+            "45": "전라북도",
+            "46": "전라남도",
+            "47": "경상북도",
+            "48": "경상남도",
+            "50": "제주특별자치도"
+        };
+
+        // 성별 라디오 선택 카드 액티브 상태 수동 조작
+        function selectGender(gender) {
+            const mCard = document.getElementById('gender-m-card');
+            const fCard = document.getElementById('gender-f-card');
+            if (gender === 'M') {
+                mCard.classList.add('active');
+                fCard.classList.remove('active');
+                document.querySelector('input[name="gender"][value="남성"]').checked = true;
+            } else {
+                fCard.classList.add('active');
+                mCard.classList.remove('active');
+                document.querySelector('input[name="gender"][value="여성"]').checked = true;
+            }
+        }
+
+        // 연락처 자동 대시 바인딩 핸들러
+        document.getElementById('user-phone').addEventListener('input', function (e) {
+            let val = e.target.value.replace(/[^0-9]/g, '');
+            if (val.length > 3 && val.length <= 7) {
+                e.target.value = val.substring(0, 3) + '-' + val.substring(3);
+            } else if (val.length > 7) {
+                e.target.value = val.substring(0, 3) + '-' + val.substring(3, 7) + '-' + val.substring(7, 11);
+            } else {
+                e.target.value = val;
+            }
+        });
+
+        // 생년월일 숫자만 허용
+        document.getElementById('user-birth').addEventListener('input', function (e) {
+            e.target.value = e.target.value.replace(/[^0-9]/g, '');
+        });
+
+        // 🏙️ [1단계 -> 2단계] 시도 변경 시 시군구 동적 페치 로드
+        async function onSidoChange(sidoCode) {
+            const sigunguSelect = document.getElementById('user-address-sigungu');
+            const dongSelect = document.getElementById('user-address-dong');
+            
+            // 초기 비우기
+            sigunguSelect.innerHTML = '<option value="">-- 시·군·구 선택 --</option>';
+            dongSelect.innerHTML = '<option value="">-- 읍·면·동 선택 --</option>';
+            
+            if (!sidoCode) return;
+            
+            sigunguSelect.innerHTML = '<option value="">⏳ 로딩 중...</option>';
+            
+            try {
+                const response = await fetch(`https://grpc-proxy-server-mkvo6j4wsq-du.a.run.app/v1/regcodes?regcode_pattern=${sidoCode}*00000&is_ignore_zero=true`);
+                const data = await response.json();
+                
+                sigunguSelect.innerHTML = '<option value="">-- 시·군·구 선택 --</option>';
+                
+                if (!data.regcodes || data.regcodes.length === 0) {
+                    // 하위 시군구가 없는 단층 행정지역(세종특별자치시 등) 예외 완화 대입
+                    const opt = document.createElement('option');
+                    opt.value = sidoNames[sidoCode];
+                    opt.dataset.code = sidoCode + "000";
+                    opt.textContent = sidoNames[sidoCode];
+                    sigunguSelect.appendChild(opt);
+                    return;
+                }
+                
+                const sidoName = sidoNames[sidoCode];
+                
+                data.regcodes.forEach(item => {
+                    const name = item.name.replace(sidoName, "").trim();
+                    const opt = document.createElement('option');
+                    opt.value = name;
+                    opt.dataset.code = item.code;
+                    opt.textContent = name;
+                    sigunguSelect.appendChild(opt);
+                });
+            } catch (err) {
+                console.error(err);
+                sigunguSelect.innerHTML = '<option value="">-- 로딩 실패 (네트워크 연결을 확인하세요) --</option>';
+            }
+        }
+
+        // 🏘️ [2단계 -> 3단계] 시군구 변경 시 읍면동 동적 페치 로드 (리 단위 정리 축약)
+        async function onSigunguChange() {
+            const sigunguSelect = document.getElementById('user-address-sigungu');
+            const selectedOption = sigunguSelect.options[sigunguSelect.selectedIndex];
+            const dongSelect = document.getElementById('user-address-dong');
+            
+            dongSelect.innerHTML = '<option value="">-- 읍·면·동 선택 --</option>';
+            
+            if (!selectedOption || !selectedOption.value) return;
+            
+            const sigunguCode = selectedOption.dataset.code;
+            const sidoSelect = document.getElementById('user-address-sido');
+            const sidoCode = sidoSelect.value;
+            
+            dongSelect.innerHTML = '<option value="">⏳ 로딩 중...</option>';
+            
+            try {
+                // 시군구 코드 앞 5자리 + *
+                const pattern = sigunguCode.substring(0, 5) + '*';
+                const response = await fetch(`https://grpc-proxy-server-mkvo6j4wsq-du.a.run.app/v1/regcodes?regcode_pattern=${pattern}&is_ignore_zero=true`);
+                const data = await response.json();
+                
+                dongSelect.innerHTML = '<option value="">-- 읍·면·동 선택 --</option>';
+                
+                const sidoName = sidoNames[sidoCode];
+                const sigunguName = selectedOption.value;
+                
+                // 시군구 법정동 자체는 제거
+                const filtered = data.regcodes.filter(item => item.code.substring(5) !== '00000');
+                
+                if (filtered.length === 0) {
+                    const opt = document.createElement('option');
+                    opt.value = sigunguName;
+                    opt.textContent = sigunguName;
+                    dongSelect.appendChild(opt);
+                    return;
+                }
+                
+                // 읍면동 중복 방지 및 간소화
+                let dongs = [];
+                filtered.forEach(item => {
+                    let name = item.name.replace(sidoName, "").replace(sigunguName, "").trim();
+                    const parts = name.split(" ");
+                    const mainDong = parts[0]; // 첫 단위(동/읍/면)만 파싱
+                    
+                    if (mainDong && !dongs.includes(mainDong)) {
+                        dongs.push(mainDong);
+                    }
+                });
+                
+                dongs.sort().forEach(dong => {
+                    const opt = document.createElement('option');
+                    opt.value = dong;
+                    opt.textContent = dong;
+                    dongSelect.appendChild(opt);
+                });
+            } catch (err) {
+                console.error(err);
+                dongSelect.innerHTML = '<option value="">-- 로딩 실패 (재시도 필요) --</option>';
+            }
+        }
+
+        // 2. 모의 데이터 소스 (전국구 시도/시군구/읍면동 모델 분기 처리 완료)
+        const dummyParticipants = [
+            {
+                id: 1,
+                name: "김영수",
+                gender: "남성",
+                birth: "19720412",
+                phone: "010-3454-9021",
+                sido: "서울특별시",
+                sigungu: "광진구",
+                dong: "구의동",
+                role: "소유주",
+                message: "시공사 사기 분양으로 위반건축물이 되어 10년째 고통스럽습니다. 전국적인 양성화 대책을 촉구합니다!"
+            },
+            {
+                id: 2,
+                name: "이혜정",
+                gender: "여성",
+                birth: "19830925",
+                phone: "010-8921-3323",
+                sido: "경기도",
+                sigungu: "수원시 영통구",
+                dong: "영통동",
+                role: "선의양수자",
+                message: "위반 등록되기 전 중개사 말만 믿고 샀는데 독박 벌금이라니요! 재산세는 매번 주택분 누진세율로 걷어가면서 어이없습니다."
+            },
+            {
+                id: 3,
+                name: "박준호",
+                gender: "남성",
+                birth: "19911105",
+                phone: "010-7744-1290",
+                sido: "부산광역시",
+                sigungu: "해운대구",
+                dong: "우동",
+                role: "임차인",
+                message: "세입자로서 주택도시보증보험 가입 거부당하고 보증금 미반환 위험에 노출되었습니다. 양성화로 살려주세요."
+            },
+            {
+                id: 4,
+                name: "최민지",
+                gender: "여성",
+                birth: "19790218",
+                phone: "010-4491-0988",
+                sido: "인천광역시",
+                sigungu: "남동구",
+                dong: "구월동",
+                role: "소유주",
+                message: "세입자가 실거주 중이라 물리적으로 철거가 불가능함에도, 기계적으로 이행강제금을 무제한 매기는 행정은 중단해야 합니다."
+            },
+            {
+                id: 5,
+                name: "정태우",
+                gender: "남성",
+                birth: "19650702",
+                phone: "010-2211-9034",
+                sido: "대전광역시",
+                sigungu: "서구",
+                dong: "둔산동",
+                role: "지지시민",
+                message: "전국 각지의 수많은 서민 주택 소유주들이 이 말도 안 되는 모순적 벌금에 고통받고 있습니다. 법률 개정을 지지합니다."
+            }
+        ];
+
+        // 3. 로컬 스토리지 초기화 및 동기화
+        function initApp() {
+            const savedData = localStorage.getItem('solidarity_roster');
+            if (savedData) {
+                roster = JSON.parse(savedData);
+            } else {
+                // 첫 실행 시 전국/읍면동 단위 5개 디폴트 더미 탑재
+                roster = [...dummyParticipants];
+                localStorage.setItem('solidarity_roster', JSON.stringify(roster));
+            }
+            updateViews();
+        }
+
+        // 대시보드 통계 계산 및 SVG 차트 업데이트 (전국구/읍면동 반영)
+        function updateViews() {
+            // A. 테이블 렌더링
+            renderRosterTable(roster);
+            renderPrintRoster(roster);
+
+            // B. 카운터 총량 주입
+            const total = roster.length;
+            document.getElementById('count-total').innerHTML = `${total}<span class="stat-unit">명</span>`;
+
+            // C. 참여 광역 지자체(시·도) 개수 집계
+            let uniqueSidos = new Set();
+            roster.forEach(p => {
+                if (p.sido) uniqueSidos.add(p.sido);
+            });
+            const regionCount = uniqueSidos.size;
+            document.getElementById('count-regions').innerHTML = `${regionCount}<span class="stat-unit">개 시·도</span>`;
+
+            // D. SVG 도넛 차트 업데이트 (집주인 / 선의양수 / 세입자 / 지지시민)
+            let counts = { "소유주": 0, "선의양수자": 0, "임차인": 0, "지지시민": 0 };
+            roster.forEach(p => {
+                if (counts[p.role] !== undefined) counts[p.role]++;
+            });
+
+            // SVG 세그먼트 연산 (원주 = 251.2)
+            const circumference = 251.2;
+            const ownerRatio = total > 0 ? counts["소유주"] / total : 0;
+            const buyerRatio = total > 0 ? counts["선의양수자"] / total : 0;
+            const tenantRatio = total > 0 ? counts["임차인"] / total : 0;
+
+            const ownerOffset = circumference - (ownerRatio * circumference);
+            const buyerOffset = circumference - ((ownerRatio + buyerRatio) * circumference);
+            const tenantOffset = circumference - ((ownerRatio + buyerRatio + tenantRatio) * circumference);
+
+            const sOwner = document.getElementById('donut-segment-owner');
+            const sBuyer = document.getElementById('donut-segment-buyer');
+            const sTenant = document.getElementById('donut-segment-tenant');
+
+            if (total > 0) {
+                sOwner.style.strokeDashoffset = ownerOffset;
+                sBuyer.style.strokeDashoffset = buyerOffset;
+                sTenant.style.strokeDashoffset = tenantOffset;
+            } else {
+                sOwner.style.strokeDashoffset = circumference;
+                sBuyer.style.strokeDashoffset = circumference;
+                sTenant.style.strokeDashoffset = circumference;
+            }
+
+            // E. 읍·면·동 지자체별 참여율 세부 순위 자동 정렬 집계 (최대 6곳 표시)
+            let dongCounts = {};
+            roster.forEach(p => {
+                let sidoShort = p.sido ? p.sido.substring(0, 2) : "";
+                if (sidoShort === "전라") sidoShort = p.sido.includes("북") ? "전북" : "전남";
+                if (sidoShort === "경상") sidoShort = p.sido.includes("북") ? "경북" : "경남";
+                if (sidoShort === "충청") sidoShort = p.sido.includes("북") ? "충북" : "충남";
+                
+                const dongKey = `${sidoShort} ${p.dong || "지역"}`;
+                dongCounts[dongKey] = (dongCounts[dongKey] || 0) + 1;
+            });
+
+            // 내림차순 정렬
+            const sortedDongs = Object.keys(dongCounts).sort((a, b) => dongCounts[b] - dongCounts[a]);
+
+            const barRowsContainer = document.getElementById('bar-rows');
+            barRowsContainer.innerHTML = '';
+            
+            // 상위 최대 6개 읍면동 추출 렌더링
+            sortedDongs.slice(0, 6).forEach(dong => {
+                const cnt = dongCounts[dong];
+                const pct = total > 0 ? Math.round((cnt / total) * 100) : 0;
+                
+                const row = document.createElement('div');
+                row.className = 'bar-chart-row';
+                row.innerHTML = `
+                    <span class="bar-label" title="${dong}">${dong}</span>
+                    <div class="bar-container">
+                        <div class="bar-fill" style="width: ${pct}%"></div>
+                    </div>
+                    <span class="bar-val">${cnt}명</span>
+                `;
+                barRowsContainer.appendChild(row);
+            });
+
+            // F. 최근 목소리 롤링보드 동기화
+            const track = document.getElementById('msg-rolling-track');
+            track.innerHTML = '';
+            
+            // 피해 메시지가 존재하는 서명인만 필터
+            const msgUsers = roster.filter(p => p.message && p.message.trim() !== "");
+            
+            // 롤링 자연스러움을 위해 무한 루프 듀플리케이션 처리
+            const displayUsers = msgUsers.length > 0 ? [...msgUsers, ...msgUsers] : [];
+            
+            if (displayUsers.length > 0) {
+                displayUsers.forEach(u => {
+                    const card = document.createElement('div');
+                    card.className = 'msg-card';
+                    card.innerHTML = `
+                        <div class="msg-meta">
+                            <span class="msg-author">${u.name.substring(0, 1)}*${u.name.substring(2) || ''} (${translateRole(u.role)})</span>
+                            <span class="msg-addr">${u.sido.substring(0,2)} ${u.sigungu.split(" ")[0]} ${u.dong}</span>
+                        </div>
+                        <div class="msg-content">"${u.message}"</div>
+                    `;
+                    track.appendChild(card);
+                });
+                // 슬라이더 트랙 높이 맞춤 조정 애니메이션 초기화
+                track.style.animation = `slideUp ${displayUsers.length * 2.5}s linear infinite`;
+            } else {
+                track.innerHTML = '<div class="msg-card" style="text-align:center; color:var(--text-muted)">"첫 따뜻한 지지 서명을 보내주세요!"</div>';
+                track.style.animation = 'none';
+            }
+        }
+
+        // 역할 한글 치환 도우미
+        function translateRole(role) {
+            switch(role) {
+                case "소유주": return "집주인";
+                case "선의양수자": return "선의양수";
+                case "임차인": return "세입자";
+                case "지지시민": return "일반시민";
+                default: return "서명인";
+            }
+        }
+
+        // 4. 서명 제출 처리 핸들러 (유효성 검사 및 데이터 저장)
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            
+            const name = document.getElementById('user-name').value.trim();
+            const genderNode = document.querySelector('input[name="gender"]:checked');
+            const birth = document.getElementById('user-birth').value.trim();
+            const phone = document.getElementById('user-phone').value.trim();
+            const sidoSelect = document.getElementById('user-address-sido').value;
+            const sigunguSelect = document.getElementById('user-address-sigungu').value;
+            const dongSelect = document.getElementById('user-address-dong').value;
+            const role = document.getElementById('user-role').value;
+            const message = document.getElementById('user-msg').value.trim();
+            const consent = document.getElementById('user-consent').checked;
+
+            // 정밀 밸리데이션 검사
+            let isValid = true;
+
+            // 이름 체크
+            if (name.length < 2) {
+                document.getElementById('err-name').style.display = 'block';
+                isValid = false;
+            } else {
+                document.getElementById('err-name').style.display = 'none';
+            }
+
+            // 성별 체크
+            if (!genderNode) {
+                document.getElementById('err-gender').style.display = 'block';
+                isValid = false;
+            } else {
+                document.getElementById('err-gender').style.display = 'none';
+            }
+
+            // 생년월일 체크
+            if (birth.length !== 8) {
+                document.getElementById('err-birth').style.display = 'block';
+                isValid = false;
+            } else {
+                document.getElementById('err-birth').style.display = 'none';
+            }
+
+            // 연락처 체크
+            if (phone.length < 12) {
+                document.getElementById('err-phone').style.display = 'block';
+                isValid = false;
+            } else {
+                document.getElementById('err-phone').style.display = 'none';
+            }
+
+            // 3단 선택 완료 체크
+            if (sidoSelect === "" || sigunguSelect === "" || dongSelect === "") {
+                document.getElementById('err-address').style.display = 'block';
+                isValid = false;
+            } else {
+                document.getElementById('err-address').style.display = 'none';
+            }
+
+            // 당사자 역할 체크
+            if (role === "") {
+                document.getElementById('err-role').style.display = 'block';
+                isValid = false;
+            } else {
+                document.getElementById('err-role').style.display = 'none';
+            }
+
+            // 동의 체크
+            if (!consent) {
+                document.getElementById('err-consent').style.display = 'block';
+                isValid = false;
+            } else {
+                document.getElementById('err-consent').style.display = 'none';
+            }
+
+            if (!isValid) return;
+
+            // 데이터 구조화 저장 (전국/읍면동 분리 보존 - 상세주소 삭제)
+            const newSignature = {
+                id: Date.now(),
+                name: name,
+                gender: genderNode.value,
+                birth: birth,
+                phone: phone,
+                sido: sidoNames[sidoSelect], // 코드를 정식 한글 이름으로 치환
+                sigungu: sigunguSelect,
+                dong: dongSelect,
+                role: role,
+                message: message
+            };
+
+            roster.push(newSignature);
+            localStorage.setItem('solidarity_roster', JSON.stringify(roster));
+            
+            // 성공 알림 및 리셋
+            alert(`[연대서명 완료]\n${name} 님의 따뜻한 권리 찾기 동의가 성공적으로 접수되었습니다!`);
+            
+            document.getElementById('roster-form').reset();
+            document.getElementById('gender-m-card').classList.remove('active');
+            document.getElementById('gender-f-card').classList.remove('active');
+            
+            // 주소 셀렉터 강제 초기화 트리거
+            document.getElementById('user-address-sigungu').innerHTML = '<option value="">-- 시·군·구 선택 --</option>';
+            document.getElementById('user-address-dong').innerHTML = '<option value="">-- 읍·면·동 선택 --</option>';
+            
+            updateViews();
+        }
+
+        // 5. 어드민 서명 테이블 동적 렌더링
+        function renderRosterTable(data) {
+            const tbody = document.getElementById('roster-table-body');
+            const emptyMsg = document.getElementById('empty-message');
+            tbody.innerHTML = '';
+
+            if (data.length === 0) {
+                emptyMsg.style.display = 'block';
+                return;
+            } else {
+                emptyMsg.style.display = 'none';
+            }
+
+            data.forEach((p, idx) => {
+                const tr = document.createElement('tr');
+                const fullAddr = `${p.sido} ${p.sigungu} ${p.dong}`;
+                tr.innerHTML = `
+                    <td><strong>${idx + 1}</strong></td>
+                    <td>${p.name}</td>
+                    <td>${p.gender}</td>
+                    <td>${p.birth.substring(0, 4)}-${p.birth.substring(4, 6)}-${p.birth.substring(6)}</td>
+                    <td>${p.phone}</td>
+                    <td>${fullAddr}</td>
+                    <td><span class="role-badge ${getBadgeClass(p.role)}">${p.role}</span></td>
+                    <td>
+                        <button class="btn-delete-row" onclick="deleteRosterItem(${p.id})" title="지우기">
+                            🗑️
+                        </button>
+                    </td>
+                `;
+                tbody.appendChild(tr);
+            });
+        }
+
+        // 배지 디자인 분기
+        function getBadgeClass(role) {
+            switch(role) {
+                case "소유주": return "role-owner";
+                case "선의양수자": return "role-buyer";
+                case "임차인": return "role-tenant";
+                default: return "role-citizen";
+            }
+        }
+
+        // 6. 인쇄 전용 Roster 테이블 렌더링 (전국구 시도/시군구/읍면동 출력)
+        function renderPrintRoster(data) {
+            const tbody = document.getElementById('print-roster-rows');
+            tbody.innerHTML = '';
+
+            if (data.length === 0) {
+                tbody.innerHTML = `<tr><td colspan="5" style="padding: 20px; color:#555; text-align:center;">참여한 연대인이 없습니다.</td></tr>`;
+                return;
+            }
+
+            data.forEach((p, idx) => {
+                const tr = document.createElement('tr');
+                const printAddr = `${p.sido} ${p.sigungu} ${p.dong}`;
+                tr.innerHTML = `
+                    <td>${idx + 1}</td>
+                    <td>${p.name.substring(0, 1)}*${p.name.substring(2) || ''}</td>
+                    <td>${p.birth.substring(0,4)}년 ${p.birth.substring(4,6)}월</td>
+                    <td class="align-left">${printAddr}</td>
+                    <td>${translateRole(p.role)}</td>
+                `;
+                tbody.appendChild(tr);
+            });
+        }
+
+        // 개별 데이터 삭제 기능
+        function deleteRosterItem(id) {
+            if (confirm("해당 서명인을 명부에서 안전하게 영구 삭제하시겠습니까?")) {
+                roster = roster.filter(p => p.id !== id);
+                localStorage.setItem('solidarity_roster', JSON.stringify(roster));
+                updateViews();
+            }
+        }
+
+        // 전체 초기화
+        function resetRoster() {
+            if (confirm("⚠️ 경고: 수집된 모든 서명 데이터가 영구적으로 날아갑니다. 지우시겠습니까?")) {
+                roster = [];
+                localStorage.removeItem('solidarity_roster');
+                updateViews();
+            }
+        }
+
+        // 모의 데이터 5개 즉시 로딩
+        function loadMockData() {
+            roster = [...dummyParticipants];
+            localStorage.setItem('solidarity_roster', JSON.stringify(roster));
+            updateViews();
+            alert("전국 읍면동 단위 객관식 데모를 위한 5명의 전국 서명인 정보가 복구되었습니다.");
+        }
+
+        // 7. 실시간 서명자 검색 기능
+        function filterRoster(query) {
+            const lowerQuery = query.toLowerCase();
+            const filtered = roster.filter(p => 
+                p.name.toLowerCase().includes(lowerQuery) ||
+                `${p.sido} ${p.sigungu} ${p.dong}`.toLowerCase().includes(lowerQuery) ||
+                p.role.toLowerCase().includes(lowerQuery)
+            );
+            renderRosterTable(filtered);
+        }
+
+        // 8. 엑셀(CSV) 다운로드 기능 (BOM 지원으로 한글 깨짐 완전 차단)
+        function exportToCSV() {
+            if (roster.length === 0) {
+                alert("내보낼 서명 데이터가 없습니다.");
+                return;
+            }
+
+            // CSV 헤더 로우 정의 (상세주소 제외)
+            let csvContent = "\uFEFF"; // UTF-8 BOM 바인딩 (Excel 한글 깨짐 방지용 최핵심 코드)
+            csvContent += "번호,성명,성별,생년월일,연락처,거주시도,시군구,읍면동,당사자구분,피해사례 및 연대 메시지\n";
+
+            roster.forEach((p, idx) => {
+                let cleanedMsg = p.message ? p.message.replace(/[\n\r]+/g, " ").replace(/"/g, '""') : "";
+                csvContent += `${idx + 1},"${p.name}","${p.gender}","${p.birth}","${p.phone}","${p.sido}","${p.sigungu}","${p.dong}","${p.role}","${cleanedMsg}"\n`;
+            });
+
+            // 파일 다운로드 브라우저 트리거
+            const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+            const link = document.createElement("a");
+            const url = URL.createObjectURL(blob);
+            
+            const today = new Date();
+            const dateStr = today.getFullYear() + "" + String(today.getMonth() + 1).padStart(2, '0') + String(today.getDate()).padStart(2, '0');
+            
+            link.setAttribute("href", url);
+            link.setAttribute("download", `전국_읍면동_위반건축물_시민연대_서명명부_${dateStr}.csv`);
+            link.style.visibility = 'hidden';
+            
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
+        // 9. 브라우저 기본 인쇄 화면 트리거
+        function printRoster() {
+            window.print();
+        }
+
+        // 페이지 최초 온로드 핸들러 바인딩
+        window.onload = initApp;
+    </script>
+</body>
+</html>
