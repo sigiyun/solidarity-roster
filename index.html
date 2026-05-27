@@ -1214,12 +1214,9 @@
                 <img class="header-logo" src="citizen_solidarity_logo.png" alt="준법건축 바른관리 시민연대 로고">
                 <div class="header-title-group">
                     <h1>준법건축 바른관리 시민연대</h1>
-                    <p><span class="badge-branch">전국 연대 본부</span> 위반건축물 양성화를 위한 건축법·주차장법 개정 촉구 전국 서명 운동</p>
+                    <p><span class="badge-branch">광진구 지부</span> 위반건축물 양성화를 위한 건축법·주차장법 개정 촉구 광진구 시민 서명 운동</p>
                 </div>
             </div>
-            <button class="btn-jump-to-form" onclick="document.getElementById('solidarity-form').scrollIntoView({behavior: 'smooth'});">
-                서명 참여하기
-            </button>
         </header>
 
         <!-- 메인 콘텐츠 (2컬럼) -->
@@ -1284,8 +1281,8 @@
                             <div class="stat-value" id="count-total">0<span class="stat-unit">명</span></div>
                         </div>
                         <div class="stat-box">
-                            <div class="stat-label">참여 광역 지자체</div>
-                            <div class="stat-value" id="count-regions">0<span class="stat-unit">개 시·도</span></div>
+                            <div class="stat-label">참여 행정동 수</div>
+                            <div class="stat-value" id="count-regions">0<span class="stat-unit">개 동</span></div>
                         </div>
                     </div>
 
@@ -1295,18 +1292,16 @@
                             <div class="chart-title">참여자 구성 비율</div>
                             <svg width="100" height="100" class="donut-chart">
                                 <circle cx="50" cy="50" r="40" fill="transparent" stroke="#334155" stroke-width="12"></circle>
-                                <circle id="donut-segment-owner" cx="50" cy="50" r="40" fill="transparent" stroke="#ef4444" stroke-width="12" stroke-dasharray="251.2" stroke-dashoffset="251.2" class="donut-segment"></circle>
-                                <circle id="donut-segment-buyer" cx="50" cy="50" r="40" fill="transparent" stroke="#f59e0b" stroke-width="12" stroke-dasharray="251.2" stroke-dashoffset="251.2" class="donut-segment"></circle>
-                                <circle id="donut-segment-tenant" cx="50" cy="50" r="40" fill="transparent" stroke="#3b82f6" stroke-width="12" stroke-dasharray="251.2" stroke-dashoffset="251.2" class="donut-segment"></circle>
+                                <circle id="donut-segment-victim" cx="50" cy="50" r="40" fill="transparent" stroke="#f59e0b" stroke-width="12" stroke-dasharray="251.2" stroke-dashoffset="251.2" class="donut-segment"></circle>
+                                <circle id="donut-segment-supporter" cx="50" cy="50" r="40" fill="transparent" stroke="#3b82f6" stroke-width="12" stroke-dasharray="251.2" stroke-dashoffset="251.2" class="donut-segment"></circle>
                             </svg>
                             <div class="chart-legend">
-                                <div class="legend-item"><span class="legend-color" style="background-color:#ef4444"></span>집주인</div>
-                                <div class="legend-item"><span class="legend-color" style="background-color:#f59e0b"></span>선의양수</div>
-                                <div class="legend-item"><span class="legend-color" style="background-color:#3b82f6"></span>세입자</div>
+                                <div class="legend-item"><span class="legend-color" style="background-color:#f59e0b"></span>피해당사자</div>
+                                <div class="legend-item"><span class="legend-color" style="background-color:#3b82f6"></span>지지시민</div>
                             </div>
                         </div>
                         <div class="bar-chart-list">
-                            <div class="chart-title" style="text-align:left; margin-bottom:5px;">가장 참여가 뜨거운 읍·면·동 (Top 6)</div>
+                            <div class="chart-title" style="text-align:left; margin-bottom:5px;">가장 참여가 뜨거운 행정동 (Top 6)</div>
                             <div id="bar-rows">
                                 <!-- 자바스크립트 전국구 읍면동 동적 주입 -->
                             </div>
@@ -1341,27 +1336,11 @@
                             <div class="error-message" id="err-name">이름을 입력해주세요.</div>
                         </div>
 
-                        <!-- 2. 성별 -->
+                        <!-- 3. 생년월일 (앞 6자리) -->
                         <div class="form-group">
-                            <label class="form-label">성별<span class="req">*</span></label>
-                            <div class="radio-group">
-                                <label class="radio-card" id="gender-m-card">
-                                    <input type="radio" name="gender" value="남성" onclick="selectGender('M')" required>
-                                    <span class="custom-radio-dot"></span> 남성
-                                </label>
-                                <label class="radio-card" id="gender-f-card">
-                                    <input type="radio" name="gender" value="여성" onclick="selectGender('F')">
-                                    <span class="custom-radio-dot"></span> 여성
-                                </label>
-                            </div>
-                            <div class="error-message" id="err-gender">성별을 선택해주세요.</div>
-                        </div>
-
-                        <!-- 3. 생년월일 -->
-                        <div class="form-group">
-                            <label class="form-label" for="user-birth">생년월일 (8자리)<span class="req">*</span></label>
-                            <input class="input-text" type="text" id="user-birth" name="userBirth" maxlength="8" placeholder="예: 19800512" required>
-                            <div class="error-message" id="err-birth">생년월일 8자리를 입력해주세요.</div>
+                            <label class="form-label" for="user-birth">생년월일 (앞 6자리)<span class="req">*</span></label>
+                            <input class="input-text" type="text" id="user-birth" name="userBirth" maxlength="6" placeholder="예: 800512" required>
+                            <div class="error-message" id="err-birth">생년월일 앞 6자리를 입력해주세요.</div>
                         </div>
 
                         <!-- 4. 연락처 -->
@@ -1371,57 +1350,44 @@
                             <div class="error-message" id="err-phone">유효한 연락처를 입력해주세요.</div>
                         </div>
 
-                        <!-- 5. 전국 거주 주소 입력 (시도, 시군구, 읍면동 3단 선택형 객관식 Dropdown) -->
+                        <!-- 5. 광진구 거주 행정동 입력 (1단 선택형 고정 Dropdown) -->
                         <div class="form-group">
-                            <label class="form-label">거주 주소 (전체 객관식 선택)<span class="req">*</span></label>
-                            
-                            <div class="address-group">
-                                <!-- 1단계: 시·도 선택 -->
-                                <select id="user-address-sido" name="addressSido" onchange="onSidoChange(this.value)" required>
-                                    <option value="">-- 광역 시·도 선택 --</option>
-                                    <option value="11">서울특별시</option>
-                                    <option value="41">경기도</option>
-                                    <option value="28">인천광역시</option>
-                                    <option value="26">부산광역시</option>
-                                    <option value="27">대구광역시</option>
-                                    <option value="30">대전광역시</option>
-                                    <option value="29">광주광역시</option>
-                                    <option value="31">울산광역시</option>
-                                    <option value="36">세종특별자치시</option>
-                                    <option value="51">강원특별자치도</option>
-                                    <option value="43">충청북도</option>
-                                    <option value="44">충청남도</option>
-                                    <option value="45">전라북도</option> <!-- API 원칭 매핑 대응 -->
-                                    <option value="46">전라남도</option>
-                                    <option value="47">경상북도</option>
-                                    <option value="48">경상남도</option>
-                                    <option value="50">제주특별자치도</option>
-                                </select>
-                                
-                                <!-- 2단계: 시·군·구 선택 -->
-                                <select id="user-address-sigungu" name="addressSigungu" onchange="onSigunguChange()" required>
-                                    <option value="">-- 시·군·구 선택 --</option>
-                                </select>
-                                
-                                <!-- 3단계: 읍·면·동 선택 -->
-                                <select id="user-address-dong" name="addressDong" required>
-                                    <option value="">-- 읍·면·동 선택 --</option>
-                                </select>
-                            </div>
-                            <div class="error-message" id="err-address">거주 주소인 시·도, 시·군·구, 읍·면·동을 순서대로 모두 골라주세요.</div>
+                            <label class="form-label" for="user-address-dong">거주 주소 (광진구 관내 행정동)<span class="req">*</span></label>
+                            <select id="user-address-dong" name="addressDong" required>
+                                <option value="">-- 거주 행정동 선택 --</option>
+                                <option value="중곡1동">중곡1동</option>
+                                <option value="중곡2동">중곡2동</option>
+                                <option value="중곡3동">중곡3동</option>
+                                <option value="중곡4동">중곡4동</option>
+                                <option value="능동">능동</option>
+                                <option value="구의1동">구의1동</option>
+                                <option value="구의2동">구의2동</option>
+                                <option value="구의3동">구의3동</option>
+                                <option value="광장동">광장동</option>
+                                <option value="자양1동">자양1동</option>
+                                <option value="자양2동">자양2동</option>
+                                <option value="자양3동">자양3동</option>
+                                <option value="자양4동">자양4동</option>
+                                <option value="화양동">화양동</option>
+                                <option value="군자동">군자동</option>
+                            </select>
+                            <div class="error-message" id="err-address">거주하시는 행정동을 골라주세요.</div>
                         </div>
 
-                        <!-- 6. 당사자 구분 -->
+                        <!-- 6. 당사자 구분 (2단계 라디오 버튼 단축) -->
                         <div class="form-group">
-                            <label class="form-label" for="user-role">서명자 소유/거주 구분<span class="req">*</span></label>
-                            <select id="user-role" name="userRole" required>
-                                <option value="">-- 해당하는 구분을 골라주세요 --</option>
-                                <option value="소유주">위반건축물 원소유주 (위반 등재 소유자)</option>
-                                <option value="선의양수자">선의의 양수 매수인 (모르고 매수한 소유자)</option>
-                                <option value="임차인">임차인/세입자 (전입 완료 거주 가구)</option>
-                                <option value="지지시민">일반 서민 구제 지지 시민</option>
-                            </select>
-                            <div class="error-message" id="err-role">본인의 소유/거주 구분을 입력해주세요.</div>
+                            <label class="form-label">서명 참여자 구분<span class="req">*</span></label>
+                            <div class="radio-group">
+                                <label class="radio-card" id="role-victim-card">
+                                    <input type="radio" name="userRole" value="피해 당사자" onclick="selectRole('victim')" required>
+                                    <span class="custom-radio-dot"></span> 피해 당사자 (소유주/임차인)
+                                </label>
+                                <label class="radio-card" id="role-supporter-card">
+                                    <input type="radio" name="userRole" value="일반 지지 시민" onclick="selectRole('supporter')">
+                                    <span class="custom-radio-dot"></span> 일반 지지 시민 (연대자)
+                                </label>
+                            </div>
+                            <div class="error-message" id="err-role">본인의 참여자 구분을 선택해주세요.</div>
                         </div>
 
                         <!-- 7. 연대의 한마디 -->
@@ -1461,21 +1427,21 @@
         <div class="admin-panel" style="display: none;">
             <div class="admin-header">
                 <div class="admin-title">
-                    🔑 서명인 데이터 관리국 (전국 본부 통합자료)
+                    🔑 서명인 데이터 관리국 (광진구 지부 통합자료)
                 </div>
                 <div class="admin-actions">
                     <button class="btn-action primary" onclick="exportToCSV()">
-                        📥 전국 엑셀(CSV) 다운로드
+                        📥 광진구 엑셀(CSV) 다운로드
                     </button>
                     <button class="btn-action" onclick="printRoster()">
-                        🖨️ 전국 서명부 인쇄 (Ctrl+P)
+                        🖨️ 광진구 서명부 인쇄 (Ctrl+P)
                     </button>
                 </div>
             </div>
 
             <!-- 검색바 -->
             <div class="search-wrapper">
-                <input class="input-text search-input" type="text" id="roster-search" placeholder="성명, 시도, 읍면동, 구분 검색..." oninput="filterRoster(this.value)">
+                <input class="input-text search-input" type="text" id="roster-search" placeholder="성명, 행정동, 구분 검색..." oninput="filterRoster(this.value)">
             </div>
 
             <!-- 서명 테이블 리스트 -->
@@ -1483,13 +1449,12 @@
                 <table class="roster-table">
                     <thead>
                         <tr>
-                            <th style="width: 6%;">번호</th>
-                            <th style="width: 14%;">성명</th>
-                            <th style="width: 8%;">성별</th>
-                            <th style="width: 14%;">생년월일</th>
-                            <th style="width: 14%;">연락처</th>
-                            <th style="width: 20%;">거주 주소(시도 시군구 읍면동)</th>
-                            <th style="width: 14%;">당사자 구분</th>
+                            <th style="width: 8%;">번호</th>
+                            <th style="width: 18%;">성명</th>
+                            <th style="width: 16%;">생년월일</th>
+                            <th style="width: 18%;">연락처</th>
+                            <th style="width: 20%;">거주 주소(광진구 행정동)</th>
+                            <th style="width: 10%;">당사자 구분</th>
                             <th style="width: 10%;">관리</th>
                         </tr>
                     </thead>
@@ -1538,18 +1503,18 @@
             "50": "제주특별자치도"
         };
 
-        // 성별 라디오 선택 카드 액티브 상태 수동 조작
-        function selectGender(gender) {
-            const mCard = document.getElementById('gender-m-card');
-            const fCard = document.getElementById('gender-f-card');
-            if (gender === 'M') {
-                mCard.classList.add('active');
-                fCard.classList.remove('active');
-                document.querySelector('input[name="gender"][value="남성"]').checked = true;
+        // 참여자 구분 라디오 카드 활성화 상태 제어
+        function selectRole(role) {
+            const victimCard = document.getElementById('role-victim-card');
+            const supporterCard = document.getElementById('role-supporter-card');
+            if (role === 'victim') {
+                victimCard.classList.add('active');
+                supporterCard.classList.remove('active');
+                document.querySelector('input[name="userRole"][value="피해 당사자"]').checked = true;
             } else {
-                fCard.classList.add('active');
-                mCard.classList.remove('active');
-                document.querySelector('input[name="gender"][value="여성"]').checked = true;
+                supporterCard.classList.add('active');
+                victimCard.classList.remove('active');
+                document.querySelector('input[name="userRole"][value="일반 지지 시민"]').checked = true;
             }
         }
 
@@ -1569,113 +1534,6 @@
         document.getElementById('user-birth').addEventListener('input', function (e) {
             e.target.value = e.target.value.replace(/[^0-9]/g, '');
         });
-
-        // 🏙️ [1단계 -> 2단계] 시도 변경 시 시군구 동적 페치 로드
-        async function onSidoChange(sidoCode) {
-            const sigunguSelect = document.getElementById('user-address-sigungu');
-            const dongSelect = document.getElementById('user-address-dong');
-            
-            // 초기 비우기
-            sigunguSelect.innerHTML = '<option value="">-- 시·군·구 선택 --</option>';
-            dongSelect.innerHTML = '<option value="">-- 읍·면·동 선택 --</option>';
-            
-            if (!sidoCode) return;
-            
-            sigunguSelect.innerHTML = '<option value="">⏳ 로딩 중...</option>';
-            
-            try {
-                const response = await fetch(`https://grpc-proxy-server-mkvo6j4wsq-du.a.run.app/v1/regcodes?regcode_pattern=${sidoCode}*00000&is_ignore_zero=true`);
-                const data = await response.json();
-                
-                sigunguSelect.innerHTML = '<option value="">-- 시·군·구 선택 --</option>';
-                
-                if (!data.regcodes || data.regcodes.length === 0) {
-                    // 하위 시군구가 없는 단층 행정지역(세종특별자치시 등) 예외 완화 대입
-                    const opt = document.createElement('option');
-                    opt.value = sidoNames[sidoCode];
-                    opt.dataset.code = sidoCode + "000";
-                    opt.textContent = sidoNames[sidoCode];
-                    sigunguSelect.appendChild(opt);
-                    return;
-                }
-                
-                const sidoName = sidoNames[sidoCode];
-                
-                data.regcodes.forEach(item => {
-                    const name = item.name.replace(sidoName, "").trim();
-                    const opt = document.createElement('option');
-                    opt.value = name;
-                    opt.dataset.code = item.code;
-                    opt.textContent = name;
-                    sigunguSelect.appendChild(opt);
-                });
-            } catch (err) {
-                console.error(err);
-                sigunguSelect.innerHTML = '<option value="">-- 로딩 실패 (네트워크 연결을 확인하세요) --</option>';
-            }
-        }
-
-        // 🏘️ [2단계 -> 3단계] 시군구 변경 시 읍면동 동적 페치 로드 (리 단위 정리 축약)
-        async function onSigunguChange() {
-            const sigunguSelect = document.getElementById('user-address-sigungu');
-            const selectedOption = sigunguSelect.options[sigunguSelect.selectedIndex];
-            const dongSelect = document.getElementById('user-address-dong');
-            
-            dongSelect.innerHTML = '<option value="">-- 읍·면·동 선택 --</option>';
-            
-            if (!selectedOption || !selectedOption.value) return;
-            
-            const sigunguCode = selectedOption.dataset.code;
-            const sidoSelect = document.getElementById('user-address-sido');
-            const sidoCode = sidoSelect.value;
-            
-            dongSelect.innerHTML = '<option value="">⏳ 로딩 중...</option>';
-            
-            try {
-                // 시군구 코드 앞 5자리 + *
-                const pattern = sigunguCode.substring(0, 5) + '*';
-                const response = await fetch(`https://grpc-proxy-server-mkvo6j4wsq-du.a.run.app/v1/regcodes?regcode_pattern=${pattern}&is_ignore_zero=true`);
-                const data = await response.json();
-                
-                dongSelect.innerHTML = '<option value="">-- 읍·면·동 선택 --</option>';
-                
-                const sidoName = sidoNames[sidoCode];
-                const sigunguName = selectedOption.value;
-                
-                // 시군구 법정동 자체는 제거
-                const filtered = data.regcodes.filter(item => item.code.substring(5) !== '00000');
-                
-                if (filtered.length === 0) {
-                    const opt = document.createElement('option');
-                    opt.value = sigunguName;
-                    opt.textContent = sigunguName;
-                    dongSelect.appendChild(opt);
-                    return;
-                }
-                
-                // 읍면동 중복 방지 및 간소화
-                let dongs = [];
-                filtered.forEach(item => {
-                    let name = item.name.replace(sidoName, "").replace(sigunguName, "").trim();
-                    const parts = name.split(" ");
-                    const mainDong = parts[0]; // 첫 단위(동/읍/면)만 파싱
-                    
-                    if (mainDong && !dongs.includes(mainDong)) {
-                        dongs.push(mainDong);
-                    }
-                });
-                
-                dongs.sort().forEach(dong => {
-                    const opt = document.createElement('option');
-                    opt.value = dong;
-                    opt.textContent = dong;
-                    dongSelect.appendChild(opt);
-                });
-            } catch (err) {
-                console.error(err);
-                dongSelect.innerHTML = '<option value="">-- 로딩 실패 (재시도 필요) --</option>';
-            }
-        }
 
         // 2. 모의 데이터 소스 (전면 제거됨)
 
@@ -1806,7 +1664,7 @@
             }
         }
 
-        // 대시보드 통계 계산 및 SVG 차트 업데이트 (전국구/읍면동 반영)
+        // 대시보드 통계 계산 및 SVG 차트 업데이트 (광진구 15개 동 반영)
         function updateViews() {
             // A. 테이블 렌더링
             renderRosterTable(roster);
@@ -1816,54 +1674,45 @@
             const total = roster.length;
             document.getElementById('count-total').innerHTML = `${total}<span class="stat-unit">명</span>`;
 
-            // C. 참여 광역 지자체(시·도) 개수 집계
-            let uniqueSidos = new Set();
+            // C. 참여 행정동 개수 집계
+            let uniqueDongs = new Set();
             roster.forEach(p => {
-                if (p.sido) uniqueSidos.add(p.sido);
+                if (p.dong) uniqueDongs.add(p.dong);
             });
-            const regionCount = uniqueSidos.size;
-            document.getElementById('count-regions').innerHTML = `${regionCount}<span class="stat-unit">개 시·도</span>`;
+            const dongCount = uniqueDongs.size;
+            document.getElementById('count-regions').innerHTML = `${dongCount}<span class="stat-unit">개 동</span>`;
 
-            // D. SVG 도넛 차트 업데이트 (집주인 / 선의양수 / 세입자 / 지지시민)
-            let counts = { "소유주": 0, "선의양수자": 0, "임차인": 0, "지지시민": 0 };
+            // D. SVG 도넛 차트 업데이트 (피해 당사자 vs 일반 지지 시민 2종 분류)
+            let counts = { "피해 당사자": 0, "일반 지지 시민": 0 };
             roster.forEach(p => {
                 if (counts[p.role] !== undefined) counts[p.role]++;
             });
 
             // SVG 세그먼트 연산 (원주 = 251.2)
             const circumference = 251.2;
-            const ownerRatio = total > 0 ? counts["소유주"] / total : 0;
-            const buyerRatio = total > 0 ? counts["선의양수자"] / total : 0;
-            const tenantRatio = total > 0 ? counts["임차인"] / total : 0;
+            const victimRatio = total > 0 ? counts["피해 당사자"] / total : 0;
+            const supporterRatio = total > 0 ? counts["일반 지지 시민"] / total : 0;
 
-            const ownerOffset = circumference - (ownerRatio * circumference);
-            const buyerOffset = circumference - ((ownerRatio + buyerRatio) * circumference);
-            const tenantOffset = circumference - ((ownerRatio + buyerRatio + tenantRatio) * circumference);
+            const victimOffset = circumference - (victimRatio * circumference);
+            const supporterOffset = circumference - ((victimRatio + supporterRatio) * circumference);
 
-            const sOwner = document.getElementById('donut-segment-owner');
-            const sBuyer = document.getElementById('donut-segment-buyer');
-            const sTenant = document.getElementById('donut-segment-tenant');
+            const sVictim = document.getElementById('donut-segment-victim');
+            const sSupporter = document.getElementById('donut-segment-supporter');
 
             if (total > 0) {
-                sOwner.style.strokeDashoffset = ownerOffset;
-                sBuyer.style.strokeDashoffset = buyerOffset;
-                sTenant.style.strokeDashoffset = tenantOffset;
+                sVictim.style.strokeDashoffset = victimOffset;
+                sSupporter.style.strokeDashoffset = supporterOffset;
             } else {
-                sOwner.style.strokeDashoffset = circumference;
-                sBuyer.style.strokeDashoffset = circumference;
-                sTenant.style.strokeDashoffset = circumference;
+                sVictim.style.strokeDashoffset = circumference;
+                sSupporter.style.strokeDashoffset = circumference;
             }
 
-            // E. 읍·면·동 지자체별 참여율 세부 순위 자동 정렬 집계 (최대 6곳 표시)
+            // E. 광진구 행정동별 참여율 세부 순위 자동 정렬 집계 (최대 6곳 표시)
             let dongCounts = {};
             roster.forEach(p => {
-                let sidoShort = p.sido ? p.sido.substring(0, 2) : "";
-                if (sidoShort === "전라") sidoShort = p.sido.includes("북") ? "전북" : "전남";
-                if (sidoShort === "경상") sidoShort = p.sido.includes("북") ? "경북" : "경남";
-                if (sidoShort === "충청") sidoShort = p.sido.includes("북") ? "충북" : "충남";
-                
-                const dongKey = `${sidoShort} ${p.dong || "지역"}`;
-                dongCounts[dongKey] = (dongCounts[dongKey] || 0) + 1;
+                if (p.dong) {
+                    dongCounts[p.dong] = (dongCounts[p.dong] || 0) + 1;
+                }
             });
 
             // 내림차순 정렬
@@ -1872,7 +1721,7 @@
             const barRowsContainer = document.getElementById('bar-rows');
             barRowsContainer.innerHTML = '';
             
-            // 상위 최대 6개 읍면동 추출 렌더링
+            // 상위 최대 6개 행정동 추출 렌더링
             sortedDongs.slice(0, 6).forEach(dong => {
                 const cnt = dongCounts[dong];
                 const pct = total > 0 ? Math.round((cnt / total) * 100) : 0;
@@ -1906,7 +1755,7 @@
                     card.innerHTML = `
                         <div class="msg-meta">
                             <span class="msg-author">${u.name.substring(0, 1)}*${u.name.substring(2) || ''} (${translateRole(u.role)})</span>
-                            <span class="msg-addr">${u.sido.substring(0,2)} ${u.sigungu.split(" ")[0]} ${u.dong}</span>
+                            <span class="msg-addr">서울 광진구 ${u.dong}</span>
                         </div>
                         <div class="msg-content">"${u.message}"</div>
                     `;
@@ -1923,10 +1772,8 @@
         // 역할 한글 치환 도우미
         function translateRole(role) {
             switch(role) {
-                case "소유주": return "집주인";
-                case "선의양수자": return "선의양수";
-                case "임차인": return "세입자";
-                case "지지시민": return "일반시민";
+                case "피해 당사자": return "당사자";
+                case "일반 지지 시민": return "지지시민";
                 default: return "서명인";
             }
         }
@@ -1936,13 +1783,10 @@
             event.preventDefault();
             
             const name = document.getElementById('user-name').value.trim();
-            const genderNode = document.querySelector('input[name="gender"]:checked');
             const birth = document.getElementById('user-birth').value.trim();
             const phone = document.getElementById('user-phone').value.trim();
-            const sidoSelect = document.getElementById('user-address-sido').value;
-            const sigunguSelect = document.getElementById('user-address-sigungu').value;
             const dongSelect = document.getElementById('user-address-dong').value;
-            const role = document.getElementById('user-role').value;
+            const roleNode = document.querySelector('input[name="userRole"]:checked');
             const message = document.getElementById('user-msg').value.trim();
             const consent = document.getElementById('user-consent').checked;
 
@@ -1957,16 +1801,8 @@
                 document.getElementById('err-name').style.display = 'none';
             }
 
-            // 성별 체크
-            if (!genderNode) {
-                document.getElementById('err-gender').style.display = 'block';
-                isValid = false;
-            } else {
-                document.getElementById('err-gender').style.display = 'none';
-            }
-
-            // 생년월일 체크
-            if (birth.length !== 8) {
+            // 생년월일 앞 6자리 체크
+            if (birth.length !== 6) {
                 document.getElementById('err-birth').style.display = 'block';
                 isValid = false;
             } else {
@@ -1981,8 +1817,8 @@
                 document.getElementById('err-phone').style.display = 'none';
             }
 
-            // 3단 선택 완료 체크
-            if (sidoSelect === "" || sigunguSelect === "" || dongSelect === "") {
+            // 행정동 선택 체크
+            if (dongSelect === "") {
                 document.getElementById('err-address').style.display = 'block';
                 isValid = false;
             } else {
@@ -1990,7 +1826,7 @@
             }
 
             // 당사자 역할 체크
-            if (role === "") {
+            if (!roleNode) {
                 document.getElementById('err-role').style.display = 'block';
                 isValid = false;
             } else {
@@ -2007,15 +1843,14 @@
 
             if (!isValid) return;
 
-            // 데이터 구조화 저장 (전국/읍면동 분리 보존 - 상세주소 삭제)
+            const role = roleNode.value;
+
+            // 데이터 구조화 저장 (초간소화 7열 스키마 매칭)
             const newSignature = {
                 id: Date.now(),
                 name: name,
-                gender: genderNode.value,
                 birth: birth,
                 phone: phone,
-                sido: sidoNames[sidoSelect], // 코드를 정식 한글 이름으로 치환
-                sigungu: sigunguSelect,
                 dong: dongSelect,
                 role: role,
                 message: message
@@ -2045,10 +1880,8 @@
                         alert(`[연대서명 완료]\n${name} 님의 소중한 서명 정보가 구글 스프레드시트로 안전하게 취합되었습니다!`);
                         
                         document.getElementById('roster-form').reset();
-                        document.getElementById('gender-m-card').classList.remove('active');
-                        document.getElementById('gender-f-card').classList.remove('active');
-                        document.getElementById('user-address-sigungu').innerHTML = '<option value="">-- 시·군·구 선택 --</option>';
-                        document.getElementById('user-address-dong').innerHTML = '<option value="">-- 읍·면·동 선택 --</option>';
+                        document.getElementById('role-victim-card').classList.remove('active');
+                        document.getElementById('role-supporter-card').classList.remove('active');
                         
                         // 구글 시트 통계로 대시보드 실시간 전국 집계 갱신
                         fetchStatsFromGoogle();
@@ -2065,10 +1898,8 @@
                     alert(`[연대서명 완료 (로컬 임시 저장)]\n네트워크 일시 지연으로 서명 데이터가 우선 현재 기기에 안전하게 저장되었습니다.\n${name} 님의 연대에 깊이 감사드립니다!`);
                     
                     document.getElementById('roster-form').reset();
-                    document.getElementById('gender-m-card').classList.remove('active');
-                    document.getElementById('gender-f-card').classList.remove('active');
-                    document.getElementById('user-address-sigungu').innerHTML = '<option value="">-- 시·군·구 선택 --</option>';
-                    document.getElementById('user-address-dong').innerHTML = '<option value="">-- 읍·면·동 선택 --</option>';
+                    document.getElementById('role-victim-card').classList.remove('active');
+                    document.getElementById('role-supporter-card').classList.remove('active');
                     
                     updateViews();
                 })
@@ -2084,10 +1915,8 @@
                 alert(`[연대서명 완료 (로컬 작동)]\n${name} 님의 따뜻한 권리 찾기 동의가 성공적으로 기재되었습니다!`);
                 
                 document.getElementById('roster-form').reset();
-                document.getElementById('gender-m-card').classList.remove('active');
-                document.getElementById('gender-f-card').classList.remove('active');
-                document.getElementById('user-address-sigungu').innerHTML = '<option value="">-- 시·군·구 선택 --</option>';
-                document.getElementById('user-address-dong').innerHTML = '<option value="">-- 읍·면·동 선택 --</option>';
+                document.getElementById('role-victim-card').classList.remove('active');
+                document.getElementById('role-supporter-card').classList.remove('active');
                 
                 updateViews();
             }
@@ -2108,14 +1937,12 @@
 
             data.forEach((p, idx) => {
                 const tr = document.createElement('tr');
-                const fullAddr = `${p.sido} ${p.sigungu} ${p.dong}`;
                 tr.innerHTML = `
                     <td><strong>${idx + 1}</strong></td>
                     <td>${p.name}</td>
-                    <td>${p.gender}</td>
-                    <td>${p.birth.substring(0, 4)}-${p.birth.substring(4, 6)}-${p.birth.substring(6)}</td>
+                    <td>${p.birth.substring(0, 2)}.${p.birth.substring(2, 4)}.${p.birth.substring(4)}</td>
                     <td>${p.phone}</td>
-                    <td>${fullAddr}</td>
+                    <td>서울특별시 광진구 ${p.dong}</td>
                     <td><span class="role-badge ${getBadgeClass(p.role)}">${p.role}</span></td>
                     <td>
                         <button class="btn-delete-row" onclick="deleteRosterItem(${p.id})" title="지우기">
@@ -2130,14 +1957,12 @@
         // 배지 디자인 분기
         function getBadgeClass(role) {
             switch(role) {
-                case "소유주": return "role-owner";
-                case "선의양수자": return "role-buyer";
-                case "임차인": return "role-tenant";
+                case "피해 당사자": return "role-owner";
                 default: return "role-citizen";
             }
         }
 
-        // 6. 인쇄 전용 Roster 테이블 렌더링 (전국구 시도/시군구/읍면동 출력)
+        // 6. 인쇄 전용 Roster 테이블 렌더링 (광진구민 행정동 출력)
         function renderPrintRoster(data) {
             const tbody = document.getElementById('print-roster-rows');
             tbody.innerHTML = '';
@@ -2149,11 +1974,13 @@
 
             data.forEach((p, idx) => {
                 const tr = document.createElement('tr');
-                const printAddr = `${p.sido} ${p.sigungu} ${p.dong}`;
+                const printAddr = `서울특별시 광진구 ${p.dong}`;
+                const yr = parseInt(p.birth.substring(0, 2), 10);
+                const fullYr = yr > 30 ? "19" + p.birth.substring(0, 2) : "20" + p.birth.substring(0, 2);
                 tr.innerHTML = `
                     <td>${idx + 1}</td>
                     <td>${p.name.substring(0, 1)}*${p.name.substring(2) || ''}</td>
-                    <td>${p.birth.substring(0,4)}년 ${p.birth.substring(4,6)}월</td>
+                    <td>${fullYr}년 ${p.birth.substring(2,4)}월</td>
                     <td class="align-left">${printAddr}</td>
                     <td>${translateRole(p.role)}</td>
                 `;
@@ -2190,13 +2017,13 @@
                 return;
             }
 
-            // CSV 헤더 로우 정의 (상세주소 제외)
+            // CSV 헤더 로우 정의 (광진구 최적화)
             let csvContent = "\uFEFF"; // UTF-8 BOM 바인딩 (Excel 한글 깨짐 방지용 최핵심 코드)
-            csvContent += "번호,성명,성별,생년월일,연락처,거주시도,시군구,읍면동,당사자구분,피해사례 및 연대 메시지\n";
+            csvContent += "번호,성명,생년월일,연락처,거주주소,참여자구분,피해사례 및 연대 메시지\n";
 
             roster.forEach((p, idx) => {
                 let cleanedMsg = p.message ? p.message.replace(/[\n\r]+/g, " ").replace(/"/g, '""') : "";
-                csvContent += `${idx + 1},"${p.name}","${p.gender}","${p.birth}","${p.phone}","${p.sido}","${p.sigungu}","${p.dong}","${p.role}","${cleanedMsg}"\n`;
+                csvContent += `${idx + 1},"${p.name}","${p.birth}","${p.phone}","서울특별시 광진구 ${p.dong}","${p.role}","${cleanedMsg}"\n`;
             });
 
             // 파일 다운로드 브라우저 트리거
@@ -2208,7 +2035,7 @@
             const dateStr = today.getFullYear() + "" + String(today.getMonth() + 1).padStart(2, '0') + String(today.getDate()).padStart(2, '0');
             
             link.setAttribute("href", url);
-            link.setAttribute("download", `전국_읍면동_위반건축물_시민연대_서명명부_${dateStr}.csv`);
+            link.setAttribute("download", `광진구_위반건축물_시민연대_서명명부_${dateStr}.csv`);
             link.style.visibility = 'hidden';
             
             document.body.appendChild(link);
